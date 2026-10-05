@@ -220,7 +220,56 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="RadioButton">
-                    <Grid Background="Transparent">
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="AvatarCardFocusedOn">
+                            <DoubleAnimation Storyboard.TargetName="CardScale"
+                                             Storyboard.TargetProperty="ScaleX"
+                                             To="1.12" Duration="0:0:0.15">
+                                <DoubleAnimation.EasingFunction>
+                                    <CubicEase EasingMode="EaseOut"/>
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                            <DoubleAnimation Storyboard.TargetName="CardScale"
+                                             Storyboard.TargetProperty="ScaleY"
+                                             To="1.12" Duration="0:0:0.15">
+                                <DoubleAnimation.EasingFunction>
+                                    <CubicEase EasingMode="EaseOut"/>
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                            <DoubleAnimation Storyboard.TargetName="GlowBorder"
+                                             Storyboard.TargetProperty="Opacity"
+                                             To="1.0" Duration="0:0:0.18"/>
+                        </Storyboard>
+                        <Storyboard x:Key="AvatarCardFocusedOff">
+                            <DoubleAnimation Storyboard.TargetName="CardScale"
+                                             Storyboard.TargetProperty="ScaleX"
+                                             To="1.0" Duration="0:0:0.2">
+                                <DoubleAnimation.EasingFunction>
+                                    <CubicEase EasingMode="EaseOut"/>
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                            <DoubleAnimation Storyboard.TargetName="CardScale"
+                                             Storyboard.TargetProperty="ScaleY"
+                                             To="1.0" Duration="0:0:0.2">
+                                <DoubleAnimation.EasingFunction>
+                                    <CubicEase EasingMode="EaseOut"/>
+                                </DoubleAnimation.EasingFunction>
+                            </DoubleAnimation>
+                            <DoubleAnimation Storyboard.TargetName="GlowBorder"
+                                             Storyboard.TargetProperty="Opacity"
+                                             To="0.0" Duration="0:0:0.15"/>
+                        </Storyboard>
+                    </ControlTemplate.Resources>
+                    <Grid Background="Transparent" RenderTransformOrigin="0.5,0.5">
+                        <Grid.RenderTransform>
+                            <ScaleTransform x:Name="CardScale" ScaleX="1.0" ScaleY="1.0"/>
+                        </Grid.RenderTransform>
+
+                        <!-- Outer PS5 Ambient Glow Ring when Focused -->
+                        <Border x:Name="GlowBorder" CornerRadius="18" Margin="-3" BorderThickness="2.5"
+                                BorderBrush="#00A4FF" Opacity="0" SnapsToDevicePixels="True"/>
+
+                        <!-- Main PS5 Card Container -->
                         <Border x:Name="CardBorder" Background="#141E2D" BorderBrush="#20FFFFFF" BorderThickness="1.5"
                                 CornerRadius="16" Padding="6" SnapsToDevicePixels="True">
                             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -229,31 +278,43 @@
                                         SnapsToDevicePixels="True">
                                     <ContentPresenter ContentSource="Content" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                                 </Border>
-                                <TextBlock Text="{TemplateBinding Tag}" FontFamily="Segoe UI" FontWeight="SemiBold"
+                                <TextBlock x:Name="AvatarTitle" Text="{TemplateBinding Tag}" FontFamily="Segoe UI" FontWeight="SemiBold"
                                            FontSize="12" Foreground="#D5E0EA" HorizontalAlignment="Center"
                                            Margin="0,8,0,0" TextTrimming="CharacterEllipsis" MaxWidth="112"/>
                             </StackPanel>
                         </Border>
 
-                        <Border x:Name="CheckBadge" Width="22" Height="22" CornerRadius="11" Background="#0070D1"
+                        <!-- Selected Badge Checkmark -->
+                        <Border x:Name="CheckBadge" Width="24" Height="24" CornerRadius="12" Background="#0070D1"
                                 BorderBrush="White" BorderThickness="1.5" HorizontalAlignment="Right" VerticalAlignment="Top"
-                                Margin="0,4,4,0" Visibility="Collapsed">
-                            <TextBlock Text="&#xE73E;" FontFamily="Segoe Fluent Icons, Segoe MDL2 Assets" FontSize="10"
+                                Margin="0,3,3,0" Visibility="Collapsed">
+                            <TextBlock Text="&#xE73E;" FontFamily="Segoe Fluent Icons, Segoe MDL2 Assets" FontSize="11"
                                        Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <ControlTemplate.Triggers>
+                        <!-- Focus Trigger with PS5 Pop and Luminous Edge -->
                         <Trigger Property="IsFocused" Value="True">
                             <Setter TargetName="CardBorder" Property="BorderBrush" Value="#00A4FF"/>
                             <Setter TargetName="CardBorder" Property="Background" Value="#25354D"/>
                             <Setter TargetName="CardBorder" Property="BorderThickness" Value="2"/>
                             <Setter TargetName="ImgBorder" Property="BorderBrush" Value="#00A4FF"/>
+                            <Setter TargetName="AvatarTitle" Property="Foreground" Value="White"/>
+                            <Trigger.EnterActions>
+                                <BeginStoryboard Storyboard="{StaticResource AvatarCardFocusedOn}"/>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard Storyboard="{StaticResource AvatarCardFocusedOff}"/>
+                            </Trigger.ExitActions>
                         </Trigger>
+                        <!-- Mouse Over Trigger -->
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter TargetName="CardBorder" Property="BorderBrush" Value="#00A4FF"/>
-                            <Setter TargetName="CardBorder" Property="Background" Value="#25354D"/>
+                            <Setter TargetName="CardBorder" Property="Background" Value="#202F42"/>
                             <Setter TargetName="ImgBorder" Property="BorderBrush" Value="#00A4FF"/>
+                            <Setter TargetName="AvatarTitle" Property="Foreground" Value="White"/>
                         </Trigger>
+                        <!-- Checked / Selected Trigger -->
                         <Trigger Property="IsChecked" Value="True">
                             <Setter TargetName="CardBorder" Property="BorderBrush" Value="#0070D1"/>
                             <Setter TargetName="CardBorder" Property="BorderThickness" Value="2"/>

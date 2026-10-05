@@ -5,7 +5,7 @@
 ![Aetheris Header](Media/Aetheris_Preview.png)
 
 [![Playnite Version](https://img.shields.io/badge/Playnite-Fullscreen-blue?style=for-the-badge&logo=playstation)](https://playnite.link)
-[![Theme Version](https://img.shields.io/badge/version-1.2.2-0070D1?style=for-the-badge)](https://github.com/thunderbolt66-wav/Aetheris-Playnite-Skin)
+[![Theme Version](https://img.shields.io/badge/version-1.2.3-0070D1?style=for-the-badge)](https://github.com/thunderbolt66-wav/Aetheris-Playnite-Skin)
 [![License](https://img.shields.io/badge/license-MIT-white?style=for-the-badge)](LICENSE)
 
 *A clean, luminous, PlayStation 5-inspired fullscreen experience crafted for modern gaming PCs, handhelds, and TV setups.*
@@ -24,9 +24,15 @@ Designed with crisp typography, smooth translucent glass cards, luminous focus r
 
 ## ✨ Features
 
+- **Interactive Profile Gamertag Editor (v1.2.3)**:
+  - Edit your player name dynamically directly inside the PlayStation profile menu.
+  - Real-time two-way synchronization between your profile card, modal banner, and top-bar PlayStation header.
+- **Authentic PS5ish Motion & Animation Suite (v1.2.3)**:
+  - **Fluid Modal Spring Transitions**: Smooth `0.94 -> 1.0` spring-pop scaling with cubic easing and cinematic fade-in when opening profile settings.
+  - **Dynamic Card Pop Scale**: Instant `1.0 -> 1.12` focus pop on hover or gamepad navigation with specular `#00A4FF` radiant glow rings.
 - **PS5 Startup Boot Loading Screen**: Authentic PlayStation first-time boot experience featuring high-res PlayStation vector emblem, ambient radiant blue pulse halo (`#400070D1`), and dual expanding wave rings on launch.
-- **PS5 Profile & Avatar Customization Hub (v1.2.1)**:
-  - Authentic PlayStation 5 modal glass card with online user banner (`ThunderboltXD`), PS Plus badge, and trophy stats widget (Platinum, Gold, Silver, Bronze).
+- **PS5 Profile & Avatar Customization Hub**:
+  - Authentic PlayStation 5 modal glass card with online user banner, PS Plus badge, and trophy stats widget (Platinum, Gold, Silver, Bronze).
   - Expanded catalog of **37 curated HD avatars** with 100% verified character and game titles (Kratos, Peter Parker, Miles Morales, Cloud, Tifa, Aerith, Zack, Snake, Kiryu, Majima, Joker, Geralt, Anime icons, and more).
   - **Instant Permanent Sync**: Switching avatars immediately syncs the top-bar avatar and profile header in real-time without resetting on close.
   - Full gamepad/controller and mouse navigation with smooth scrollable catalog.
