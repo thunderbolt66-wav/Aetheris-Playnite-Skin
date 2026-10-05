@@ -66,16 +66,16 @@
                                                     <Storyboard>
                                                         <DoubleAnimation Storyboard.TargetProperty="Opacity"
                                                                          From="0" To="1"
-                                                                         BeginTime="0:0:0.18" Duration="0:0:0.42">
+                                                                         BeginTime="0:0:0.1" Duration="0:0:0.4">
                                                             <DoubleAnimation.EasingFunction>
-                                                                <CubicEase EasingMode="EaseOut"/>
+                                                                <SineEase EasingMode="EaseOut"/>
                                                             </DoubleAnimation.EasingFunction>
                                                         </DoubleAnimation>
                                                         <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(TranslateTransform.Y)"
-                                                                         From="30" To="0"
-                                                                         BeginTime="0:0:0.18" Duration="0:0:0.42">
+                                                                         From="25" To="0"
+                                                                         BeginTime="0:0:0.1" Duration="0:0:0.4">
                                                             <DoubleAnimation.EasingFunction>
-                                                                <CubicEase EasingMode="EaseOut"/>
+                                                                <SineEase EasingMode="EaseOut"/>
                                                             </DoubleAnimation.EasingFunction>
                                                         </DoubleAnimation>
                                                     </Storyboard>
@@ -85,7 +85,11 @@
                                                 <BeginStoryboard>
                                                     <Storyboard>
                                                         <DoubleAnimation Storyboard.TargetProperty="Opacity"
-                                                                         To="0" Duration="0:0:0.25"/>
+                                                                         To="0" Duration="0:0:0.25">
+                                                            <DoubleAnimation.EasingFunction>
+                                                                <SineEase EasingMode="EaseIn"/>
+                                                            </DoubleAnimation.EasingFunction>
+                                                        </DoubleAnimation>
                                                     </Storyboard>
                                                 </BeginStoryboard>
                                             </DataTrigger.ExitActions>
@@ -2558,21 +2562,21 @@
                                                 <BeginStoryboard>
                                                     <Storyboard>
                                                         <DoubleAnimation Storyboard.TargetProperty="Opacity"
-                                                                         To="0" Duration="0:0:0.45">
+                                                                         To="0" Duration="0:0:0.35">
                                                             <DoubleAnimation.EasingFunction>
-                                                                <CubicEase EasingMode="EaseOut"/>
+                                                                <SineEase EasingMode="EaseInOut"/>
                                                             </DoubleAnimation.EasingFunction>
                                                         </DoubleAnimation>
                                                         <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleX)"
-                                                                         To="1.06" Duration="0:0:0.45">
+                                                                         To="1.05" Duration="0:0:0.35">
                                                             <DoubleAnimation.EasingFunction>
-                                                                <CubicEase EasingMode="EaseOut"/>
+                                                                <SineEase EasingMode="EaseOut"/>
                                                             </DoubleAnimation.EasingFunction>
                                                         </DoubleAnimation>
                                                         <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleY)"
-                                                                         To="1.06" Duration="0:0:0.45">
+                                                                         To="1.05" Duration="0:0:0.35">
                                                             <DoubleAnimation.EasingFunction>
-                                                                <CubicEase EasingMode="EaseOut"/>
+                                                                <SineEase EasingMode="EaseOut"/>
                                                             </DoubleAnimation.EasingFunction>
                                                         </DoubleAnimation>
                                                     </Storyboard>
@@ -2582,21 +2586,21 @@
                                                 <BeginStoryboard>
                                                     <Storyboard>
                                                         <DoubleAnimation Storyboard.TargetProperty="Opacity"
-                                                                         To="1" Duration="0:0:0.35">
+                                                                         To="1" Duration="0:0:0.3">
                                                             <DoubleAnimation.EasingFunction>
-                                                                <CubicEase EasingMode="EaseOut"/>
+                                                                <SineEase EasingMode="EaseOut"/>
                                                             </DoubleAnimation.EasingFunction>
                                                         </DoubleAnimation>
                                                         <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleX)"
-                                                                         To="1.0" Duration="0:0:0.35">
+                                                                         To="1.0" Duration="0:0:0.3">
                                                             <DoubleAnimation.EasingFunction>
-                                                                <CubicEase EasingMode="EaseOut"/>
+                                                                <SineEase EasingMode="EaseOut"/>
                                                             </DoubleAnimation.EasingFunction>
                                                         </DoubleAnimation>
                                                         <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleY)"
-                                                                         To="1.0" Duration="0:0:0.35">
+                                                                         To="1.0" Duration="0:0:0.3">
                                                             <DoubleAnimation.EasingFunction>
-                                                                <CubicEase EasingMode="EaseOut"/>
+                                                                <SineEase EasingMode="EaseOut"/>
                                                             </DoubleAnimation.EasingFunction>
                                                         </DoubleAnimation>
                                                     </Storyboard>
