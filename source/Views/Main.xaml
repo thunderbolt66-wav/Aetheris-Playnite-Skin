@@ -557,137 +557,126 @@
                                 <CheckBoxEx x:Name="ProfilePictureCheckBox" Style="{DynamicResource ButtonTopMenuProfileToggle}"
                                             VerticalAlignment="Bottom" Grid.Column="15" Margin="0,0,0,0">
                                     <CheckBoxEx.Content>
-                                        <Grid Width="46" Height="46">
-                                            <Border CornerRadius="23" Width="46" Height="46" SnapsToDevicePixels="True">
-                                                <Border.OpacityMask>
-                                                    <VisualBrush>
-                                                        <VisualBrush.Visual>
-                                                            <Border Background="Black" CornerRadius="23" Width="46" Height="46"/>
-                                                        </VisualBrush.Visual>
-                                                    </VisualBrush>
-                                                </Border.OpacityMask>
-                                                <Image RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill" Width="46" Height="46">
-                                                    <Image.Style>
-                                                        <Style TargetType="Image">
-                                                            <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar1.png'}"/>
-                                                            <Style.Triggers>
+                                        <Border Width="46" Height="46" CornerRadius="23" SnapsToDevicePixels="True">
+                                            <Border.Style>
+                                                <Style TargetType="Border">
+                                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush1}"/>
+                                                    <Style.Triggers>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio0, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar0.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush0}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio1, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar1.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush1}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio2, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar2.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush2}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio3, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar3.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush3}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio4, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar4.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush4}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio5, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar5.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush5}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio6, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar6.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush6}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio7, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar7.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush7}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio8, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar8.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush8}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio9, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar9.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush9}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio10, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar10.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush10}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio11, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar11.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush11}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio12, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar12.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush12}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio13, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar13.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush13}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio14, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar14.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush14}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio15, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar15.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush15}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio16, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar16.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush16}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio17, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar17.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush17}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio18, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar18.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush18}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio19, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar19.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush19}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio20, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar20.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush20}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio21, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar21.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush21}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio22, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar22.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush22}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio23, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar23.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush23}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio24, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar24.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush24}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio25, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar25.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush25}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio26, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar26.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush26}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio27, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar27.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush27}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio28, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar28.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush28}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio29, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar29.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush29}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio30, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar30.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush30}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio31, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar31.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush31}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio32, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar32.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush32}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio33, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar33.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush33}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio34, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar34.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush34}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio35, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar35.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush35}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio36, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar36.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush36}"/>
                                 </DataTrigger>
-                                                </Style.Triggers>
-                                                        </Style>
-                                                    </Image.Style>
-                                                </Image>
-                                            </Border>
-                                        </Grid>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Border.Style>
+                                        </Border>
                                     </CheckBoxEx.Content>
                                 </CheckBoxEx>
 
@@ -2506,7 +2495,7 @@
 
 
                         <!-- PS5 PROFILE & AVATAR CUSTOMIZATION MODAL -->
-                        <!-- NOTE: We use Visibility="Hidden" (instead of Collapsed) when closed so WPF keeps all elements in the visual tree and preserves DataTrigger evaluations -->
+                        <!-- Native PS5 Dialog Architecture: Keep in visual tree (Hidden) so all DataTrigger evaluations stay live permanently -->
                         <Grid x:Name="ProfileModalRoot" Grid.RowSpan="3" Panel.ZIndex="1000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                             <Grid.Style>
                                 <Style TargetType="Grid">
@@ -2523,12 +2512,12 @@
                                 </Style>
                             </Grid.Style>
 
-                            <!-- Semi-transparent PS5 OLED backdrop - clicking closes the modal -->
+                            <!-- PS5 Cinematic Dimmed Backdrop -->
                             <CheckBoxEx IsChecked="{Binding ElementName=ProfilePictureCheckBox, Path=IsChecked, Mode=TwoWay}"
                                         Focusable="False" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                                 <CheckBoxEx.Template>
                                     <ControlTemplate TargetType="CheckBoxEx">
-                                        <Border Background="#D805070D"/>
+                                        <Border Background="#E604070D"/>
                                     </ControlTemplate>
                                 </CheckBoxEx.Template>
                             </CheckBoxEx>
@@ -2607,134 +2596,126 @@
 
                                             <!-- Active Avatar Round Preview with Ring -->
                                             <Grid Grid.Column="0" Margin="0,0,20,0" VerticalAlignment="Center">
-                                                <Border CornerRadius="44" Width="88" Height="88" BorderThickness="3" BorderBrush="#0070D1" SnapsToDevicePixels="True">
-                                                    <Border.OpacityMask>
-                                                        <VisualBrush>
-                                                            <VisualBrush.Visual>
-                                                                <Border Background="Black" CornerRadius="44" Width="88" Height="88"/>
-                                                            </VisualBrush.Visual>
-                                                        </VisualBrush>
-                                                    </Border.OpacityMask>
-                                                    <Image RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill" Width="88" Height="88">
-                                                        <Image.Style>
-                                                            <Style TargetType="Image">
-                                                                <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar1.png'}"/>
-                                                                <Style.Triggers>
+                                                <!-- Native PS5 Avatar with Blue Focus Ring -->
+                                                <Border Width="88" Height="88" CornerRadius="44" BorderThickness="3" BorderBrush="#0070D1" SnapsToDevicePixels="True">
+                                                    <Border.Style>
+                                                        <Style TargetType="Border">
+                                                            <Setter Property="Background" Value="{StaticResource PS5AvatarBrush1}"/>
+                                                            <Style.Triggers>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio0, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar0.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush0}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio1, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar1.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush1}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio2, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar2.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush2}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio3, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar3.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush3}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio4, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar4.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush4}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio5, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar5.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush5}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio6, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar6.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush6}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio7, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar7.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush7}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio8, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar8.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush8}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio9, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar9.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush9}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio10, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar10.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush10}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio11, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar11.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush11}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio12, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar12.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush12}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio13, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar13.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush13}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio14, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar14.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush14}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio15, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar15.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush15}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio16, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar16.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush16}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio17, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar17.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush17}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio18, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar18.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush18}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio19, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar19.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush19}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio20, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar20.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush20}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio21, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar21.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush21}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio22, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar22.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush22}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio23, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar23.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush23}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio24, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar24.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush24}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio25, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar25.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush25}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio26, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar26.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush26}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio27, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar27.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush27}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio28, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar28.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush28}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio29, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar29.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush29}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio30, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar30.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush30}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio31, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar31.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush31}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio32, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar32.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush32}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio33, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar33.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush33}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio34, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar34.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush34}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio35, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar35.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush35}"/>
                                 </DataTrigger>
                                 <DataTrigger Binding="{Binding ElementName=AvatarRadio36, Path=IsChecked}" Value="True">
-                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar36.png'}"/>
+                                    <Setter Property="Background" Value="{StaticResource PS5AvatarBrush36}"/>
                                 </DataTrigger>
-                                                                </Style.Triggers>
-                                                            </Style>
-                                                        </Image.Style>
-                                                    </Image>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Border.Style>
                                                 </Border>
 
                                                 <!-- Online Status Beacon -->
@@ -3042,223 +3023,223 @@
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Classic Silhouette - PlayStation Classic"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar0.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush0}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio1" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Kratos" IsChecked="True">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Kratos - God of War Ragnarok"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar1.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush1}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio2" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Peter Parker">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Peter Parker - Marvel's Spider-Man"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar2.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush2}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio3" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Miles Morales">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Miles Morales - Spider-Man: Miles Morales"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar3.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush3}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio4" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Cloud Strife">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Cloud Strife - Final Fantasy VII Rebirth"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar4.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush4}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio5" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Tifa Lockhart">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Tifa Lockhart - Final Fantasy VII Rebirth"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar5.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush5}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio6" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Aerith Gainsborough">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Aerith Gainsborough - Final Fantasy VII Rebirth"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar6.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush6}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio7" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Zack Fair">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Zack Fair - Crisis Core: FFVII"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar7.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush7}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio8" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Yuna">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Yuna - Final Fantasy X"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar8.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush8}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio9" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Tidus">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Tidus - Final Fantasy X"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar9.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush9}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio10" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Solid Snake">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Solid Snake - Metal Gear Solid"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar10.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush10}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio11" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Big Boss">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Big Boss - Metal Gear Solid V"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar11.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush11}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio12" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Revolver Ocelot">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Revolver Ocelot - Metal Gear Solid"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar12.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush12}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio13" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Kazuma Kiryu">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Kazuma Kiryu - Yakuza / Like a Dragon"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar13.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush13}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio14" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Goro Majima">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Goro Majima - Yakuza / Like a Dragon"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar14.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush14}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio15" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Ichiban Kasuga">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Ichiban Kasuga - Yakuza: Like a Dragon"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar15.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush15}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio16" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Joker">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Joker - Persona 5 Royal"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar16.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush16}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio17" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Geralt of Rivia">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Geralt of Rivia - The Witcher 3: Wild Hunt"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar17.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush17}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio18" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Ciri">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Ciri - The Witcher 3: Wild Hunt"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar18.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush18}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio19" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Batman">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Batman - Batman: Arkham Knight"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar19.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush19}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio20" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Commander Shepard">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Commander Shepard - Mass Effect Legendary"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar20.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush20}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio21" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Ryu Hayabusa">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Ryu Hayabusa - Ninja Gaiden"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar21.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush21}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio22" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Son Goku">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Son Goku - Dragon Ball Z"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar22.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush22}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio23" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Majin Vegeta">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Majin Vegeta - Dragon Ball Z"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar23.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush23}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio24" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Future Trunks">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Future Trunks - Dragon Ball Z"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar24.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush24}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio25" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Naruto Uzumaki">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Naruto Uzumaki - Naruto Shippuden"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar25.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush25}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio26" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Sasuke Uchiha">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Sasuke Uchiha - Naruto Shippuden"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar26.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush26}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio27" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Kakashi Hatake">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Kakashi Hatake - Naruto Shippuden"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar27.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush27}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio28" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Itachi Uchiha">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Itachi Uchiha - Naruto Shippuden"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar28.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush28}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio29" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Monkey D. Luffy">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Monkey D. Luffy - One Piece"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar29.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush29}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio30" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Roronoa Zoro">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Roronoa Zoro - One Piece"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar30.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush30}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio31" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Ichigo Kurosaki">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Ichigo Kurosaki - Bleach"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar31.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush31}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio32" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Kenpachi Zaraki">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Kenpachi Zaraki - Bleach"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar32.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush32}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio33" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Link">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Link - The Legend of Zelda"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar33.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush33}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio34" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Princess Zelda">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Princess Zelda - The Legend of Zelda"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar34.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush34}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio35" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Mario">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Mario - Super Mario"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar35.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush35}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                         <RadioButton x:Name="AvatarRadio36" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Aetheris Modern">
                                             <RadioButton.ToolTip>
                                                 <ToolTip Content="Aetheris Modern - PlayStation 5 Theme"/>
                                             </RadioButton.ToolTip>
-                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar36.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                            <Border CornerRadius="38" Width="76" Height="76" Background="{StaticResource PS5AvatarBrush36}" IsHitTestVisible="False"/>
                                         </RadioButton>
                                             </WrapPanel>
                                         </ScrollViewer>

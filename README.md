@@ -5,7 +5,7 @@
 ![Aetheris Header](Media/Aetheris_Preview.png)
 
 [![Playnite Version](https://img.shields.io/badge/Playnite-Fullscreen-blue?style=for-the-badge&logo=playstation)](https://playnite.link)
-[![Theme Version](https://img.shields.io/badge/version-1.2.1-0070D1?style=for-the-badge)](https://github.com/thunderbolt66-wav/Aetheris-Playnite-Skin)
+[![Theme Version](https://img.shields.io/badge/version-1.2.2-0070D1?style=for-the-badge)](https://github.com/thunderbolt66-wav/Aetheris-Playnite-Skin)
 [![License](https://img.shields.io/badge/license-MIT-white?style=for-the-badge)](LICENSE)
 
 *A clean, luminous, PlayStation 5-inspired fullscreen experience crafted for modern gaming PCs, handhelds, and TV setups.*

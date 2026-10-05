@@ -227,13 +227,6 @@
                                 <Border x:Name="ImgBorder" CornerRadius="38" Width="76" Height="76"
                                         BorderThickness="2" BorderBrush="#2A3C55" HorizontalAlignment="Center"
                                         SnapsToDevicePixels="True">
-                                    <Border.OpacityMask>
-                                        <VisualBrush>
-                                            <VisualBrush.Visual>
-                                                <Border Background="Black" CornerRadius="38" Width="76" Height="76"/>
-                                            </VisualBrush.Visual>
-                                        </VisualBrush>
-                                    </Border.OpacityMask>
                                     <ContentPresenter ContentSource="Content" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                                 </Border>
                                 <TextBlock Text="{TemplateBinding Tag}" FontFamily="Segoe UI" FontWeight="SemiBold"

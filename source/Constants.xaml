@@ -599,4 +599,46 @@
 
 
 
+
+    <!-- ========================================= -->
+    <!-- PS5 OFFICIAL AVATAR IMAGE BRUSHES -->
+    <!-- ========================================= -->
+    <ImageBrush x:Key="PS5AvatarBrush0" ImageSource="{ThemeFile 'Images/Avatars/Avatar0.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush1" ImageSource="{ThemeFile 'Images/Avatars/Avatar1.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush2" ImageSource="{ThemeFile 'Images/Avatars/Avatar2.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush3" ImageSource="{ThemeFile 'Images/Avatars/Avatar3.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush4" ImageSource="{ThemeFile 'Images/Avatars/Avatar4.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush5" ImageSource="{ThemeFile 'Images/Avatars/Avatar5.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush6" ImageSource="{ThemeFile 'Images/Avatars/Avatar6.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush7" ImageSource="{ThemeFile 'Images/Avatars/Avatar7.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush8" ImageSource="{ThemeFile 'Images/Avatars/Avatar8.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush9" ImageSource="{ThemeFile 'Images/Avatars/Avatar9.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush10" ImageSource="{ThemeFile 'Images/Avatars/Avatar10.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush11" ImageSource="{ThemeFile 'Images/Avatars/Avatar11.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush12" ImageSource="{ThemeFile 'Images/Avatars/Avatar12.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush13" ImageSource="{ThemeFile 'Images/Avatars/Avatar13.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush14" ImageSource="{ThemeFile 'Images/Avatars/Avatar14.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush15" ImageSource="{ThemeFile 'Images/Avatars/Avatar15.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush16" ImageSource="{ThemeFile 'Images/Avatars/Avatar16.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush17" ImageSource="{ThemeFile 'Images/Avatars/Avatar17.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush18" ImageSource="{ThemeFile 'Images/Avatars/Avatar18.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush19" ImageSource="{ThemeFile 'Images/Avatars/Avatar19.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush20" ImageSource="{ThemeFile 'Images/Avatars/Avatar20.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush21" ImageSource="{ThemeFile 'Images/Avatars/Avatar21.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush22" ImageSource="{ThemeFile 'Images/Avatars/Avatar22.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush23" ImageSource="{ThemeFile 'Images/Avatars/Avatar23.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush24" ImageSource="{ThemeFile 'Images/Avatars/Avatar24.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush25" ImageSource="{ThemeFile 'Images/Avatars/Avatar25.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush26" ImageSource="{ThemeFile 'Images/Avatars/Avatar26.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush27" ImageSource="{ThemeFile 'Images/Avatars/Avatar27.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush28" ImageSource="{ThemeFile 'Images/Avatars/Avatar28.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush29" ImageSource="{ThemeFile 'Images/Avatars/Avatar29.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush30" ImageSource="{ThemeFile 'Images/Avatars/Avatar30.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush31" ImageSource="{ThemeFile 'Images/Avatars/Avatar31.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush32" ImageSource="{ThemeFile 'Images/Avatars/Avatar32.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush33" ImageSource="{ThemeFile 'Images/Avatars/Avatar33.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush34" ImageSource="{ThemeFile 'Images/Avatars/Avatar34.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush35" ImageSource="{ThemeFile 'Images/Avatars/Avatar35.png'}" Stretch="UniformToFill"/>
+    <ImageBrush x:Key="PS5AvatarBrush36" ImageSource="{ThemeFile 'Images/Avatars/Avatar36.png'}" Stretch="UniformToFill"/>
+
 </ResourceDictionary>
