@@ -5,7 +5,7 @@
 ![Aetheris Header](Media/Aetheris_Preview.png)
 
 [![Playnite Version](https://img.shields.io/badge/Playnite-Fullscreen-blue?style=for-the-badge&logo=playstation)](https://playnite.link)
-[![Theme Version](https://img.shields.io/badge/version-1.2.3-0070D1?style=for-the-badge)](https://github.com/thunderbolt66-wav/Aetheris-Playnite-Skin)
+[![Theme Version](https://img.shields.io/badge/version-1.3.0-0070D1?style=for-the-badge)](https://github.com/thunderbolt66-wav/Aetheris-Playnite-Skin)
 [![License](https://img.shields.io/badge/license-MIT-white?style=for-the-badge)](LICENSE)
 
 *A clean, luminous, PlayStation 5-inspired fullscreen experience crafted for modern gaming PCs, handhelds, and TV setups.*
@@ -24,10 +24,16 @@ Designed with crisp typography, smooth translucent glass cards, luminous focus r
 
 ## ✨ Features
 
-- **Interactive Profile Gamertag Editor (v1.2.3)**:
+- **Official PlayStation 5 Login & User Selection Screen (v1.3.0)**:
+  - Exact recreation of the iconic *"Welcome Back to PlayStation / Who's using this controller?"* screen.
+  - **Dynamic PS5 Ambient Animation**: Real-time floating stardust bokeh orbs with smooth sinusoidal hover motion, warm diagonal light rays, and specular gold shimmer.
+  - **Dual Card Selection**: PlayStation **"Add User"** circular guest card alongside the active Player Profile card.
+  - **Active Controller Status**: Authentic controller icon and player `#1` indicator.
+  - **Seamless Two-Way Integration**: Log in directly with `ENTER` / `X` or launch avatar customization via **Options** / **Switch User**.
+- **Interactive Profile Gamertag Editor**:
   - Edit your player name dynamically directly inside the PlayStation profile menu.
   - Real-time two-way synchronization between your profile card, modal banner, and top-bar PlayStation header.
-- **Authentic PS5ish Motion & Animation Suite (v1.2.3)**:
+- **Authentic PS5ish Motion & Animation Suite**:
   - **Fluid Modal Spring Transitions**: Smooth `0.94 -> 1.0` spring-pop scaling with cubic easing and cinematic fade-in when opening profile settings.
   - **Dynamic Card Pop Scale**: Instant `1.0 -> 1.12` focus pop on hover or gamepad navigation with specular `#00A4FF` radiant glow rings.
 - **PS5 Startup Boot Loading Screen**: Authentic PlayStation first-time boot experience featuring high-res PlayStation vector emblem, ambient radiant blue pulse halo (`#400070D1`), and dual expanding wave rings on launch.
