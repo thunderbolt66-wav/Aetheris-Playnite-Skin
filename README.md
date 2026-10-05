@@ -5,7 +5,7 @@
 ![Aetheris Header](Media/Aetheris_Preview.png)
 
 [![Playnite Version](https://img.shields.io/badge/Playnite-Fullscreen-blue?style=for-the-badge&logo=playstation)](https://playnite.link)
-[![Theme Version](https://img.shields.io/badge/version-1.3.1-0070D1?style=for-the-badge)](https://github.com/thunderbolt66-wav/Aetheris-Playnite-Skin)
+[![Theme Version](https://img.shields.io/badge/version-1.3.2-0070D1?style=for-the-badge)](https://github.com/thunderbolt66-wav/Aetheris-Playnite-Skin)
 [![License](https://img.shields.io/badge/license-MIT-white?style=for-the-badge)](LICENSE)
 
 *A clean, luminous, PlayStation 5-inspired fullscreen experience crafted for modern gaming PCs, handhelds, and TV setups.*
@@ -78,7 +78,7 @@ Genuine captures of **Aetheris PS5** running in Playnite Fullscreen mode:
 ## 📦 Installation
 
 ### Method 1: Direct Playnite Theme Package (`.pthm`)
-1. Download the latest `Aetheris_93ede1bc-cf3c-47a0-9323-29f697d598f2_1_3_1.pthm` from the [Releases](https://github.com/thunderbolt66-wav/Aetheris-Playnite-Skin/releases) tab.
+1. Download the latest `Aetheris_93ede1bc-cf3c-47a0-9323-29f697d598f2_1_3_2.pthm` from the [Releases](https://github.com/thunderbolt66-wav/Aetheris-Playnite-Skin/releases) tab.
 2. Double-click the `.pthm` file to install it directly into Playnite.
 3. Open **Playnite Settings** (`F4`) ➔ **Appearance** ➔ **Fullscreen**.
 4. Select **Aetheris PS5** as your theme and restart Playnite.
