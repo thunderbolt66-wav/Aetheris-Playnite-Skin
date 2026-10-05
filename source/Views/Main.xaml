@@ -43,7 +43,56 @@
                                 </MediaElement.Style>
                             </MediaElement>
                         </Grid>
-                        <Grid x:Name="PART_ViewHost" Background="Transparent">
+
+                        <!-- Persistent toggle control for Login Screen dismissal/switch (Defined early so PART_ViewHost can bind to it) -->
+                        <CheckBoxEx x:Name="PS5LoginScreenDismissCheckBox" IsChecked="False" Visibility="Collapsed" Focusable="False"/>
+
+                        <!-- Main Dashboard ViewHost (Only reveals and renders after Login Screen is dismissed) -->
+                        <Grid x:Name="PART_ViewHost" Background="Transparent" RenderTransformOrigin="0.5,0.5">
+                            <Grid.RenderTransform>
+                                <TranslateTransform X="0" Y="0"/>
+                            </Grid.RenderTransform>
+                            <Grid.Style>
+                                <Style TargetType="Grid">
+                                    <Setter Property="Opacity" Value="0"/>
+                                    <Setter Property="Visibility" Value="Hidden"/>
+                                    <Setter Property="IsHitTestVisible" Value="False"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding ElementName=PS5LoginScreenDismissCheckBox, Path=IsChecked}" Value="True">
+                                            <Setter Property="Visibility" Value="Visible"/>
+                                            <Setter Property="IsHitTestVisible" Value="True"/>
+                                            <DataTrigger.EnterActions>
+                                                <BeginStoryboard>
+                                                    <Storyboard>
+                                                        <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                                                         From="0" To="1"
+                                                                         BeginTime="0:0:0.18" Duration="0:0:0.42">
+                                                            <DoubleAnimation.EasingFunction>
+                                                                <CubicEase EasingMode="EaseOut"/>
+                                                            </DoubleAnimation.EasingFunction>
+                                                        </DoubleAnimation>
+                                                        <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(TranslateTransform.Y)"
+                                                                         From="30" To="0"
+                                                                         BeginTime="0:0:0.18" Duration="0:0:0.42">
+                                                            <DoubleAnimation.EasingFunction>
+                                                                <CubicEase EasingMode="EaseOut"/>
+                                                            </DoubleAnimation.EasingFunction>
+                                                        </DoubleAnimation>
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </DataTrigger.EnterActions>
+                                            <DataTrigger.ExitActions>
+                                                <BeginStoryboard>
+                                                    <Storyboard>
+                                                        <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                                                         To="0" Duration="0:0:0.25"/>
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </DataTrigger.ExitActions>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Grid.Style>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="*" />
@@ -2492,12 +2541,6 @@
                         <GameStatus x:Name="PART_ElemGameStatus" Grid.RowSpan="3"
                                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
-                        <!-- ========================================================= -->
-                        <!-- OFFICIAL PLAYSTATION 5 LOGIN & USER SELECTION SCREEN      -->
-                        <!-- ========================================================= -->
-                        <!-- Persistent toggle control for Login Screen dismissal/switch -->
-                        <CheckBoxEx x:Name="PS5LoginScreenDismissCheckBox" IsChecked="False" Visibility="Collapsed" Focusable="False"/>
-
                         <Grid x:Name="PS5LoginScreenRoot" Grid.RowSpan="3" Panel.ZIndex="1200"
                               HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                               RenderTransformOrigin="0.5,0.5">
@@ -2560,7 +2603,6 @@
                                                 </BeginStoryboard>
                                             </DataTrigger.ExitActions>
                                             <Setter Property="IsHitTestVisible" Value="False"/>
-                                            <Setter Property="Visibility" Value="Hidden"/>
                                         </DataTrigger>
                                     </Style.Triggers>
                                 </Style>
