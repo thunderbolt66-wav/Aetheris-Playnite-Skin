@@ -569,36 +569,120 @@
                                                 <Image RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill" Width="46" Height="46">
                                                     <Image.Style>
                                                         <Style TargetType="Image">
-                                                            <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar0.png'}"/>
+                                                            <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar1.png'}"/>
                                                             <Style.Triggers>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio0, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar0.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio1, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar1.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio2, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar2.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio3, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar3.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio4, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar4.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio5, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar5.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio6, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar6.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio7, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar7.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio8, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar8.png'}"/>
-                                                                </DataTrigger>
-                                                            </Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio0, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar0.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio1, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar1.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio2, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar2.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio3, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar3.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio4, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar4.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio5, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar5.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio6, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar6.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio7, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar7.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio8, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar8.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio9, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar9.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio10, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar10.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio11, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar11.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio12, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar12.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio13, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar13.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio14, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar14.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio15, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar15.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio16, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar16.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio17, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar17.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio18, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar18.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio19, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar19.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio20, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar20.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio21, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar21.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio22, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar22.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio23, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar23.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio24, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar24.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio25, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar25.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio26, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar26.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio27, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar27.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio28, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar28.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio29, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar29.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio30, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar30.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio31, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar31.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio32, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar32.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio33, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar33.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio34, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar34.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio35, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar35.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio36, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar36.png'}"/>
+                                </DataTrigger>
+                                                </Style.Triggers>
                                                         </Style>
                                                     </Image.Style>
                                                 </Image>
@@ -2422,48 +2506,53 @@
 
 
                         <!-- PS5 PROFILE & AVATAR CUSTOMIZATION MODAL -->
-                        <Grid Grid.RowSpan="3" Panel.ZIndex="1000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <!-- NOTE: We use Visibility="Hidden" (instead of Collapsed) when closed so WPF keeps all elements in the visual tree and preserves DataTrigger evaluations -->
+                        <Grid x:Name="ProfileModalRoot" Grid.RowSpan="3" Panel.ZIndex="1000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                             <Grid.Style>
                                 <Style TargetType="Grid">
-                                    <Setter Property="Visibility" Value="Collapsed" />
+                                    <Setter Property="Visibility" Value="Hidden"/>
+                                    <Setter Property="Opacity" Value="0"/>
+                                    <Setter Property="IsHitTestVisible" Value="False"/>
                                     <Style.Triggers>
                                         <DataTrigger Binding="{Binding ElementName=ProfilePictureCheckBox, Path=IsChecked}" Value="True">
-                                            <Setter Property="Visibility" Value="Visible" />
+                                            <Setter Property="Visibility" Value="Visible"/>
+                                            <Setter Property="Opacity" Value="1"/>
+                                            <Setter Property="IsHitTestVisible" Value="True"/>
                                         </DataTrigger>
                                     </Style.Triggers>
                                 </Style>
                             </Grid.Style>
 
-                            <!-- Semi-transparent backdrop - clicking closes the modal -->
+                            <!-- Semi-transparent PS5 OLED backdrop - clicking closes the modal -->
                             <CheckBoxEx IsChecked="{Binding ElementName=ProfilePictureCheckBox, Path=IsChecked, Mode=TwoWay}"
                                         Focusable="False" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                                 <CheckBoxEx.Template>
                                     <ControlTemplate TargetType="CheckBoxEx">
-                                        <Border Background="#D0060912"/>
+                                        <Border Background="#D805070D"/>
                                     </ControlTemplate>
                                 </CheckBoxEx.Template>
                             </CheckBoxEx>
 
-                            <!-- Modal Dialog Card -->
-                            <Border Width="1140" Height="680" HorizontalAlignment="Center" VerticalAlignment="Center"
-                                    CornerRadius="24" BorderThickness="1.5" BorderBrush="#35FFFFFF">
+                            <!-- PS5 Modal Glass Container -->
+                            <Border Width="1180" Height="720" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                    CornerRadius="24" BorderThickness="1.5" BorderBrush="#304464">
                                 <Border.Background>
-                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                        <GradientStop Color="#F2182030" Offset="0.0"/>
-                                        <GradientStop Color="#F40F1422" Offset="0.6"/>
-                                        <GradientStop Color="#F8080C14" Offset="1.0"/>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0.8,1">
+                                        <GradientStop Color="#F7141C2B" Offset="0.0"/>
+                                        <GradientStop Color="#FA0C121D" Offset="0.5"/>
+                                        <GradientStop Color="#FD06080E" Offset="1.0"/>
                                     </LinearGradientBrush>
                                 </Border.Background>
 
-                                <Grid Margin="35,28,35,28">
+                                <Grid Margin="36,26,36,24">
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="Auto"/> <!-- Header -->
-                                        <RowDefinition Height="Auto"/> <!-- Active Avatar Banner -->
-                                        <RowDefinition Height="*"/>    <!-- Avatar Gallery Grid -->
-                                        <RowDefinition Height="Auto"/> <!-- Footer / Actions -->
+                                        <RowDefinition Height="Auto"/> <!-- Top Bar Navigation / Header -->
+                                        <RowDefinition Height="Auto"/> <!-- User Profile & Active Badge Banner -->
+                                        <RowDefinition Height="*"/>    <!-- Scrollable Avatar Catalog -->
+                                        <RowDefinition Height="Auto"/> <!-- PS5 Controller Action Legend -->
                                     </Grid.RowDefinitions>
 
-                                    <!-- 1. Header Area -->
+                                    <!-- 1. Header Navigation -->
                                     <DockPanel Grid.Row="0" Margin="0,0,0,16">
                                         <!-- Close Button on right -->
                                         <CheckBoxEx DockPanel.Dock="Right" VerticalAlignment="Center"
@@ -2471,12 +2560,12 @@
                                                     Cursor="Hand" Focusable="True">
                                             <CheckBoxEx.Template>
                                                 <ControlTemplate TargetType="CheckBoxEx">
-                                                    <Border x:Name="CloseBorder" Background="#20FFFFFF" BorderBrush="#30FFFFFF" BorderThickness="1"
-                                                            CornerRadius="18" Padding="18,7" SnapsToDevicePixels="True">
+                                                    <Border x:Name="CloseBorder" Background="#1AFFFFFF" BorderBrush="#25FFFFFF" BorderThickness="1"
+                                                            CornerRadius="18" Padding="20,7" SnapsToDevicePixels="True">
                                                         <StackPanel Orientation="Horizontal">
-                                                            <TextBlock Text="&#xE711;" FontFamily="Segoe Fluent Icons, Segoe MDL2 Assets" FontSize="13"
+                                                            <TextBlock Text="&#xE711;" FontFamily="Segoe Fluent Icons, Segoe MDL2 Assets" FontSize="12"
                                                                        Foreground="White" VerticalAlignment="Center" Margin="0,0,8,0"/>
-                                                            <TextBlock Text="Close" FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="14"
+                                                            <TextBlock Text="Close" FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="13"
                                                                        Foreground="White" VerticalAlignment="Center"/>
                                                         </StackPanel>
                                                     </Border>
@@ -2494,21 +2583,21 @@
                                             </CheckBoxEx.Template>
                                         </CheckBoxEx>
 
-                                        <!-- Title & Subtitle -->
+                                        <!-- PlayStation Emblem & Category Title -->
                                         <StackPanel VerticalAlignment="Center">
                                             <StackPanel Orientation="Horizontal">
-                                                <Image Source="{ThemeFile 'Images/PS5_BootLogo.png'}" Width="28" Height="28" Margin="0,0,12,0" VerticalAlignment="Center"/>
-                                                <TextBlock Text="PROFILE &amp; AVATAR CUSTOMIZATION" FontFamily="Segoe UI" FontWeight="Bold" FontSize="22"
+                                                <Image Source="{ThemeFile 'Images/PS5_BootLogo.png'}" Width="26" Height="26" Margin="0,0,12,0" VerticalAlignment="Center"/>
+                                                <TextBlock Text="PLAYSTATION NETWORK PROFILE" FontFamily="Segoe UI" FontWeight="Bold" FontSize="21"
                                                            Foreground="White" VerticalAlignment="Center"/>
                                             </StackPanel>
-                                            <TextBlock Text="Choose an official PlayStation avatar to personalize your experience"
-                                                       FontFamily="Segoe UI Light" FontSize="14" Foreground="#88FFFFFF" Margin="40,2,0,0"/>
+                                            <TextBlock Text="Select an avatar from the official PlayStation catalog to represent your account"
+                                                       FontFamily="Segoe UI Light" FontSize="13" Foreground="#8FA3B8" Margin="38,2,0,0"/>
                                         </StackPanel>
                                     </DockPanel>
 
-                                    <!-- 2. Active Profile Banner -->
-                                    <Border Grid.Row="1" Background="#14FFFFFF" BorderThickness="1" BorderBrush="#20FFFFFF"
-                                            CornerRadius="16" Padding="18,12" Margin="0,0,0,16">
+                                    <!-- 2. PS5 User Profile & Active Avatar Showcase -->
+                                    <Border Grid.Row="1" Background="#16FFFFFF" BorderThickness="1" BorderBrush="#283C55"
+                                            CornerRadius="18" Padding="20,14" Margin="0,0,0,16">
                                         <Grid>
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="Auto"/>
@@ -2516,188 +2605,689 @@
                                                 <ColumnDefinition Width="Auto"/>
                                             </Grid.ColumnDefinitions>
 
-                                            <!-- Active Avatar Preview -->
-                                            <Border Grid.Column="0" CornerRadius="38" Width="76" Height="76" BorderThickness="2.5" BorderBrush="#0070D1"
-                                                    Margin="0,0,18,0" SnapsToDevicePixels="True">
-                                                <Border.OpacityMask>
-                                                    <VisualBrush>
-                                                        <VisualBrush.Visual>
-                                                            <Border Background="Black" CornerRadius="38" Width="76" Height="76"/>
-                                                        </VisualBrush.Visual>
-                                                    </VisualBrush>
-                                                </Border.OpacityMask>
-                                                <Image RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill" Width="76" Height="76">
-                                                    <Image.Style>
-                                                        <Style TargetType="Image">
-                                                            <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar0.png'}"/>
-                                                            <Style.Triggers>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio0, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar0.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio1, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar1.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio2, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar2.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio3, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar3.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio4, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar4.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio5, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar5.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio6, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar6.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio7, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar7.png'}"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio8, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar8.png'}"/>
-                                                                </DataTrigger>
-                                                            </Style.Triggers>
-                                                        </Style>
-                                                    </Image.Style>
-                                                </Image>
-                                            </Border>
+                                            <!-- Active Avatar Round Preview with Ring -->
+                                            <Grid Grid.Column="0" Margin="0,0,20,0" VerticalAlignment="Center">
+                                                <Border CornerRadius="44" Width="88" Height="88" BorderThickness="3" BorderBrush="#0070D1" SnapsToDevicePixels="True">
+                                                    <Border.OpacityMask>
+                                                        <VisualBrush>
+                                                            <VisualBrush.Visual>
+                                                                <Border Background="Black" CornerRadius="44" Width="88" Height="88"/>
+                                                            </VisualBrush.Visual>
+                                                        </VisualBrush>
+                                                    </Border.OpacityMask>
+                                                    <Image RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill" Width="88" Height="88">
+                                                        <Image.Style>
+                                                            <Style TargetType="Image">
+                                                                <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar1.png'}"/>
+                                                                <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio0, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar0.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio1, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar1.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio2, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar2.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio3, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar3.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio4, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar4.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio5, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar5.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio6, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar6.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio7, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar7.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio8, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar8.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio9, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar9.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio10, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar10.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio11, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar11.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio12, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar12.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio13, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar13.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio14, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar14.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio15, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar15.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio16, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar16.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio17, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar17.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio18, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar18.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio19, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar19.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio20, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar20.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio21, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar21.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio22, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar22.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio23, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar23.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio24, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar24.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio25, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar25.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio26, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar26.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio27, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar27.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio28, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar28.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio29, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar29.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio30, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar30.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio31, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar31.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio32, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar32.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio33, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar33.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio34, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar34.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio35, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar35.png'}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding ElementName=AvatarRadio36, Path=IsChecked}" Value="True">
+                                    <Setter Property="Source" Value="{ThemeFile 'Images/Avatars/Avatar36.png'}"/>
+                                </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </Image.Style>
+                                                    </Image>
+                                                </Border>
 
-                                            <!-- Active Info -->
+                                                <!-- Online Status Beacon -->
+                                                <Border Width="18" Height="18" CornerRadius="9" Background="#00FF48" BorderBrush="#0E1624" BorderThickness="2.5"
+                                                        HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,2,2"/>
+                                            </Grid>
+
+                                            <!-- Profile Details & Active Selection Name -->
                                             <StackPanel Grid.Column="1" VerticalAlignment="Center">
-                                                <StackPanel Orientation="Horizontal">
-                                                    <TextBlock Text="SELECTED AVATAR:" FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="11"
-                                                               Foreground="#00A4FF" Margin="0,0,10,0"/>
-                                                    <Border Background="#2000FF48" CornerRadius="4" Padding="6,1" VerticalAlignment="Center">
-                                                        <TextBlock Text="ACTIVE" FontFamily="Segoe UI" FontWeight="Bold" FontSize="10" Foreground="#00FF48"/>
+                                                <StackPanel Orientation="Horizontal" Margin="0,0,0,3">
+                                                    <TextBlock Text="ThunderboltXD" FontFamily="Segoe UI" FontWeight="Bold" FontSize="20" Foreground="White" Margin="0,0,10,0"/>
+                                                    <Border Background="#2000FF48" BorderBrush="#4000FF48" BorderThickness="1" CornerRadius="4" Padding="6,1" VerticalAlignment="Center">
+                                                        <TextBlock Text="ONLINE" FontFamily="Segoe UI" FontWeight="Bold" FontSize="10" Foreground="#00FF48"/>
+                                                    </Border>
+                                                    <Border Background="#1E0070D1" BorderBrush="#4000A4FF" BorderThickness="1" CornerRadius="4" Padding="6,1" VerticalAlignment="Center" Margin="8,0,0,0">
+                                                        <TextBlock Text="PS PLUS" FontFamily="Segoe UI" FontWeight="Bold" FontSize="10" Foreground="#00A4FF"/>
                                                     </Border>
                                                 </StackPanel>
-                                                <!-- Dynamic Title -->
-                                                <TextBlock FontFamily="Segoe UI" FontWeight="Bold" FontSize="20" Foreground="White" Margin="0,3,0,0">
+
+                                                <!-- Dynamic Character Title -->
+                                                <TextBlock FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="16" Foreground="#E2ECF5">
                                                     <TextBlock.Style>
                                                         <Style TargetType="TextBlock">
-                                                            <Setter Property="Text" Value="PlayStation Classic Shapes"/>
+                                                            <Setter Property="Text" Value="Kratos"/>
                                                             <Style.Triggers>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio0, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Text" Value="PlayStation Classic Shapes"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio1, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Text" Value="Astro Bot (Team ASOBI)"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio2, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Text" Value="Kratos (God of War Ragnarök)"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio3, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Text" Value="Spider-Man (Marvel's Spider-Man 2)"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio4, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Text" Value="Jin Sakai (Ghost of Tsushima)"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio5, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Text" Value="Aloy (Horizon Forbidden West)"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio6, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Text" Value="Ellie (The Last of Us Part II)"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio7, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Text" Value="Ratchet &amp; Clank (Rift Apart)"/>
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding ElementName=AvatarRadio8, Path=IsChecked}" Value="True">
-                                                                    <Setter Property="Text" Value="Fluted Knight (Demon's Souls)"/>
-                                                                </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio0, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Classic Silhouette"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio1, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Kratos"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio2, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Peter Parker"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio3, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Miles Morales"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio4, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Cloud Strife"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio5, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Tifa Lockhart"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio6, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Aerith Gainsborough"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio7, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Zack Fair"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio8, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Yuna"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio9, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Tidus"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio10, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Solid Snake"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio11, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Big Boss"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio12, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Revolver Ocelot"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio13, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Kazuma Kiryu"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio14, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Goro Majima"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio15, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Ichiban Kasuga"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio16, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Joker"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio17, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Geralt of Rivia"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio18, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Ciri"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio19, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Batman"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio20, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Commander Shepard"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio21, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Ryu Hayabusa"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio22, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Son Goku"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio23, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Majin Vegeta"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio24, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Future Trunks"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio25, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Naruto Uzumaki"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio26, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Sasuke Uchiha"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio27, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Kakashi Hatake"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio28, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Itachi Uchiha"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio29, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Monkey D. Luffy"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio30, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Roronoa Zoro"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio31, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Ichigo Kurosaki"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio32, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Kenpachi Zaraki"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio33, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Link"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio34, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Princess Zelda"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio35, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Mario"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio36, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Aetheris Modern"/>
+                                        </DataTrigger>
                                                             </Style.Triggers>
                                                         </Style>
                                                     </TextBlock.Style>
                                                 </TextBlock>
-                                                <TextBlock Text="Select any avatar below to immediately update your in-game profile"
-                                                           FontFamily="Segoe UI Light" FontSize="13" Foreground="#70FFFFFF" Margin="0,2,0,0"/>
+
+                                                <!-- Dynamic Game / Franchise Subtitle -->
+                                                <TextBlock FontFamily="Segoe UI Light" FontSize="13" Foreground="#8FA3B8" Margin="0,2,0,0">
+                                                    <TextBlock.Style>
+                                                        <Style TargetType="TextBlock">
+                                                            <Setter Property="Text" Value="God of War Ragnarok"/>
+                                                            <Style.Triggers>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio0, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="PlayStation Classic"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio1, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="God of War Ragnarok"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio2, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Marvel's Spider-Man"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio3, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Spider-Man: Miles Morales"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio4, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Final Fantasy VII Rebirth"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio5, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Final Fantasy VII Rebirth"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio6, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Final Fantasy VII Rebirth"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio7, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Crisis Core: FFVII"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio8, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Final Fantasy X"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio9, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Final Fantasy X"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio10, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Metal Gear Solid"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio11, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Metal Gear Solid V"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio12, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Metal Gear Solid"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio13, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Yakuza / Like a Dragon"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio14, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Yakuza / Like a Dragon"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio15, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Yakuza: Like a Dragon"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio16, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Persona 5 Royal"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio17, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="The Witcher 3: Wild Hunt"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio18, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="The Witcher 3: Wild Hunt"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio19, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Batman: Arkham Knight"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio20, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Mass Effect Legendary"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio21, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Ninja Gaiden"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio22, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Dragon Ball Z"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio23, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Dragon Ball Z"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio24, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Dragon Ball Z"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio25, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Naruto Shippuden"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio26, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Naruto Shippuden"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio27, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Naruto Shippuden"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio28, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Naruto Shippuden"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio29, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="One Piece"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio30, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="One Piece"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio31, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Bleach"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio32, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Bleach"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio33, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="The Legend of Zelda"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio34, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="The Legend of Zelda"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio35, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="Super Mario"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=AvatarRadio36, Path=IsChecked}" Value="True">
+                                            <Setter Property="Text" Value="PlayStation 5 Theme"/>
+                                        </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </TextBlock.Style>
+                                                </TextBlock>
                                             </StackPanel>
 
-                                            <!-- PS5 Status Badge -->
-                                            <StackPanel Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
-                                                <Border Background="#15FFFFFF" CornerRadius="12" Padding="14,8" Margin="0,0,8,0">
-                                                    <StackPanel Orientation="Horizontal">
-                                                        <Image Source="{ThemeFile 'Images/Trophy_Gold.png'}" Width="18" Height="18" Margin="0,0,6,0" VerticalAlignment="Center"/>
-                                                        <TextBlock Text="PS5 Player" FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="13" Foreground="#DDD" VerticalAlignment="Center"/>
+                                            <!-- PS5 Trophy Summary Widget -->
+                                            <Border Grid.Column="2" Background="#12000000" BorderBrush="#20FFFFFF" BorderThickness="1"
+                                                    CornerRadius="12" Padding="16,10" VerticalAlignment="Center">
+                                                <StackPanel Orientation="Horizontal">
+                                                    <!-- Trophy Level -->
+                                                    <StackPanel VerticalAlignment="Center" Margin="0,0,18,0">
+                                                        <TextBlock Text="LEVEL" FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="10" Foreground="#8FA3B8" HorizontalAlignment="Center"/>
+                                                        <TextBlock Text="342" FontFamily="Segoe UI" FontWeight="Bold" FontSize="18" Foreground="White" HorizontalAlignment="Center"/>
                                                     </StackPanel>
-                                                </Border>
-                                            </StackPanel>
+                                                    <!-- Platinum -->
+                                                    <StackPanel VerticalAlignment="Center" Margin="0,0,12,0">
+                                                        <Image Source="{ThemeFile 'Images/Trophy_Platinum.png'}" Width="18" Height="18" HorizontalAlignment="Center"/>
+                                                        <TextBlock Text="18" FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="12" Foreground="#E0E8F0" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                    </StackPanel>
+                                                    <!-- Gold -->
+                                                    <StackPanel VerticalAlignment="Center" Margin="0,0,12,0">
+                                                        <Image Source="{ThemeFile 'Images/Trophy_Gold.png'}" Width="18" Height="18" HorizontalAlignment="Center"/>
+                                                        <TextBlock Text="94" FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="12" Foreground="#E0E8F0" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                    </StackPanel>
+                                                    <!-- Silver -->
+                                                    <StackPanel VerticalAlignment="Center" Margin="0,0,12,0">
+                                                        <Image Source="{ThemeFile 'Images/Trophy_Silver.png'}" Width="18" Height="18" HorizontalAlignment="Center"/>
+                                                        <TextBlock Text="256" FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="12" Foreground="#E0E8F0" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                    </StackPanel>
+                                                    <!-- Bronze -->
+                                                    <StackPanel VerticalAlignment="Center">
+                                                        <Image Source="{ThemeFile 'Images/Trophy_Bronze.png'}" Width="18" Height="18" HorizontalAlignment="Center"/>
+                                                        <TextBlock Text="1,120" FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="12" Foreground="#E0E8F0" HorizontalAlignment="Center" Margin="0,2,0,0"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </Border>
                                         </Grid>
                                     </Border>
 
-                                    <!-- 3. Avatar Gallery Grid (5 columns, 2 rows) -->
-                                    <Border Grid.Row="2" Background="#10000000" CornerRadius="16" Padding="10">
-                                        <UniformGrid Columns="5" Rows="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-                                            <RadioButton x:Name="AvatarRadio0" Style="{DynamicResource PS5AvatarRadioCardStyle}"
-                                                         Tag="Classic PS" IsChecked="True">
-                                                <Image Source="{ThemeFile 'Images/Avatars/Avatar0.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
-                                            </RadioButton>
-
-                                            <RadioButton x:Name="AvatarRadio1" Style="{DynamicResource PS5AvatarRadioCardStyle}"
-                                                         Tag="Astro Bot">
-                                                <Image Source="{ThemeFile 'Images/Avatars/Avatar1.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
-                                            </RadioButton>
-
-                                            <RadioButton x:Name="AvatarRadio2" Style="{DynamicResource PS5AvatarRadioCardStyle}"
-                                                         Tag="Kratos">
-                                                <Image Source="{ThemeFile 'Images/Avatars/Avatar2.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
-                                            </RadioButton>
-
-                                            <RadioButton x:Name="AvatarRadio3" Style="{DynamicResource PS5AvatarRadioCardStyle}"
-                                                         Tag="Spider-Man">
-                                                <Image Source="{ThemeFile 'Images/Avatars/Avatar3.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
-                                            </RadioButton>
-
-                                            <RadioButton x:Name="AvatarRadio4" Style="{DynamicResource PS5AvatarRadioCardStyle}"
-                                                         Tag="Jin Sakai">
-                                                <Image Source="{ThemeFile 'Images/Avatars/Avatar4.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
-                                            </RadioButton>
-
-                                            <RadioButton x:Name="AvatarRadio5" Style="{DynamicResource PS5AvatarRadioCardStyle}"
-                                                         Tag="Aloy">
-                                                <Image Source="{ThemeFile 'Images/Avatars/Avatar5.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
-                                            </RadioButton>
-
-                                            <RadioButton x:Name="AvatarRadio6" Style="{DynamicResource PS5AvatarRadioCardStyle}"
-                                                         Tag="Ellie">
-                                                <Image Source="{ThemeFile 'Images/Avatars/Avatar6.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
-                                            </RadioButton>
-
-                                            <RadioButton x:Name="AvatarRadio7" Style="{DynamicResource PS5AvatarRadioCardStyle}"
-                                                         Tag="Ratchet">
-                                                <Image Source="{ThemeFile 'Images/Avatars/Avatar7.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
-                                            </RadioButton>
-
-                                            <RadioButton x:Name="AvatarRadio8" Style="{DynamicResource PS5AvatarRadioCardStyle}"
-                                                         Tag="Demon's Souls">
-                                                <Image Source="{ThemeFile 'Images/Avatars/Avatar8.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
-                                            </RadioButton>
-                                        </UniformGrid>
+                                    <!-- 3. Scrollable Avatar Catalog (37 Avatars) -->
+                                    <Border Grid.Row="2" Background="#10000000" BorderBrush="#15FFFFFF" BorderThickness="1" CornerRadius="16" Padding="12,8">
+                                        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"
+                                                      Focusable="False" SnapsToDevicePixels="True">
+                                            <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <RadioButton x:Name="AvatarRadio0" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Classic Silhouette">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Classic Silhouette - PlayStation Classic"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar0.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio1" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Kratos" IsChecked="True">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Kratos - God of War Ragnarok"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar1.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio2" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Peter Parker">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Peter Parker - Marvel's Spider-Man"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar2.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio3" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Miles Morales">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Miles Morales - Spider-Man: Miles Morales"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar3.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio4" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Cloud Strife">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Cloud Strife - Final Fantasy VII Rebirth"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar4.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio5" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Tifa Lockhart">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Tifa Lockhart - Final Fantasy VII Rebirth"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar5.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio6" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Aerith Gainsborough">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Aerith Gainsborough - Final Fantasy VII Rebirth"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar6.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio7" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Zack Fair">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Zack Fair - Crisis Core: FFVII"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar7.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio8" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Yuna">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Yuna - Final Fantasy X"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar8.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio9" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Tidus">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Tidus - Final Fantasy X"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar9.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio10" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Solid Snake">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Solid Snake - Metal Gear Solid"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar10.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio11" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Big Boss">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Big Boss - Metal Gear Solid V"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar11.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio12" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Revolver Ocelot">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Revolver Ocelot - Metal Gear Solid"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar12.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio13" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Kazuma Kiryu">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Kazuma Kiryu - Yakuza / Like a Dragon"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar13.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio14" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Goro Majima">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Goro Majima - Yakuza / Like a Dragon"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar14.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio15" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Ichiban Kasuga">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Ichiban Kasuga - Yakuza: Like a Dragon"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar15.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio16" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Joker">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Joker - Persona 5 Royal"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar16.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio17" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Geralt of Rivia">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Geralt of Rivia - The Witcher 3: Wild Hunt"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar17.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio18" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Ciri">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Ciri - The Witcher 3: Wild Hunt"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar18.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio19" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Batman">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Batman - Batman: Arkham Knight"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar19.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio20" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Commander Shepard">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Commander Shepard - Mass Effect Legendary"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar20.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio21" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Ryu Hayabusa">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Ryu Hayabusa - Ninja Gaiden"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar21.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio22" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Son Goku">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Son Goku - Dragon Ball Z"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar22.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio23" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Majin Vegeta">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Majin Vegeta - Dragon Ball Z"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar23.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio24" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Future Trunks">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Future Trunks - Dragon Ball Z"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar24.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio25" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Naruto Uzumaki">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Naruto Uzumaki - Naruto Shippuden"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar25.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio26" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Sasuke Uchiha">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Sasuke Uchiha - Naruto Shippuden"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar26.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio27" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Kakashi Hatake">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Kakashi Hatake - Naruto Shippuden"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar27.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio28" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Itachi Uchiha">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Itachi Uchiha - Naruto Shippuden"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar28.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio29" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Monkey D. Luffy">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Monkey D. Luffy - One Piece"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar29.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio30" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Roronoa Zoro">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Roronoa Zoro - One Piece"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar30.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio31" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Ichigo Kurosaki">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Ichigo Kurosaki - Bleach"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar31.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio32" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Kenpachi Zaraki">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Kenpachi Zaraki - Bleach"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar32.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio33" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Link">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Link - The Legend of Zelda"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar33.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio34" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Princess Zelda">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Princess Zelda - The Legend of Zelda"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar34.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio35" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Mario">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Mario - Super Mario"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar35.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                        <RadioButton x:Name="AvatarRadio36" Style="{DynamicResource PS5AvatarRadioCardStyle}" Tag="Aetheris Modern">
+                                            <RadioButton.ToolTip>
+                                                <ToolTip Content="Aetheris Modern - PlayStation 5 Theme"/>
+                                            </RadioButton.ToolTip>
+                                            <Image Source="{ThemeFile 'Images/Avatars/Avatar36.png'}" Width="84" Height="84" RenderOptions.BitmapScalingMode="Fant" Stretch="UniformToFill"/>
+                                        </RadioButton>
+                                            </WrapPanel>
+                                        </ScrollViewer>
                                     </Border>
 
-                                    <!-- 4. Footer Prompt / Instructions -->
-                                    <DockPanel Grid.Row="3" Margin="0,14,0,0">
+                                    <!-- 4. Controller Action Legend & Done Button -->
+                                    <DockPanel Grid.Row="3" Margin="0,16,0,0">
                                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                                            <Border Background="#25FFFFFF" CornerRadius="4" Padding="6,2" Margin="0,0,8,0">
-                                                <TextBlock Text="ENTER / A" FontFamily="Segoe UI" FontWeight="Bold" FontSize="11" Foreground="#DDD"/>
+                                            <Border Background="#25FFFFFF" CornerRadius="4" Padding="7,2" Margin="0,0,8,0">
+                                                <TextBlock Text="ENTER / A" FontFamily="Segoe UI" FontWeight="Bold" FontSize="11" Foreground="#E0E0E0"/>
                                             </Border>
-                                            <TextBlock Text="Select Avatar" FontFamily="Segoe UI" FontSize="13" Foreground="#88FFFFFF" VerticalAlignment="Center" Margin="0,0,20,0"/>
+                                            <TextBlock Text="Select Avatar" FontFamily="Segoe UI" FontSize="13" Foreground="#9AB0C6" VerticalAlignment="Center" Margin="0,0,24,0"/>
 
-                                            <Border Background="#25FFFFFF" CornerRadius="4" Padding="6,2" Margin="0,0,8,0">
-                                                <TextBlock Text="ESC / B" FontFamily="Segoe UI" FontWeight="Bold" FontSize="11" Foreground="#DDD"/>
+                                            <Border Background="#25FFFFFF" CornerRadius="4" Padding="7,2" Margin="0,0,8,0">
+                                                <TextBlock Text="ESC / B" FontFamily="Segoe UI" FontWeight="Bold" FontSize="11" Foreground="#E0E0E0"/>
                                             </Border>
-                                            <TextBlock Text="Close Menu" FontFamily="Segoe UI" FontSize="13" Foreground="#88FFFFFF" VerticalAlignment="Center"/>
+                                            <TextBlock Text="Close Menu" FontFamily="Segoe UI" FontSize="13" Foreground="#9AB0C6" VerticalAlignment="Center" Margin="0,0,24,0"/>
+
+                                            <TextBlock Text="Instant sync: Selection immediately updates top-bar and profile" FontFamily="Segoe UI" FontSize="12" Foreground="#607890" VerticalAlignment="Center"/>
                                         </StackPanel>
 
-                                        <!-- Apply & Save button -->
+                                        <!-- Apply & Done Button -->
                                         <CheckBoxEx DockPanel.Dock="Right" HorizontalAlignment="Right"
                                                     IsChecked="{Binding ElementName=ProfilePictureCheckBox, Path=IsChecked, Mode=TwoWay}"
                                                     Focusable="True" Cursor="Hand">
                                             <CheckBoxEx.Template>
                                                 <ControlTemplate TargetType="CheckBoxEx">
                                                     <Border x:Name="DoneBorder" Background="#0070D1" BorderBrush="#00A4FF" BorderThickness="1.5"
-                                                            CornerRadius="18" Padding="22,8" SnapsToDevicePixels="True">
+                                                            CornerRadius="18" Padding="24,8" SnapsToDevicePixels="True">
                                                         <StackPanel Orientation="Horizontal">
                                                             <TextBlock Text="&#xE73E;" FontFamily="Segoe Fluent Icons, Segoe MDL2 Assets" FontSize="13"
                                                                        Foreground="White" VerticalAlignment="Center" Margin="0,0,8,0"/>

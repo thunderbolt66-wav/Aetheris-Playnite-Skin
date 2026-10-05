@@ -1,0 +1,261 @@
+[
+  {
+    "index": 0,
+    "filename": "Avatar0.png",
+    "name": "Classic Silhouette",
+    "game": "PlayStation Classic",
+    "category": "PlayStation"
+  },
+  {
+    "index": 1,
+    "filename": "Avatar1.png",
+    "name": "Kratos",
+    "game": "God of War Ragnarok",
+    "category": "PlayStation"
+  },
+  {
+    "index": 2,
+    "filename": "Avatar2.png",
+    "name": "Peter Parker",
+    "game": "Marvel's Spider-Man",
+    "category": "PlayStation"
+  },
+  {
+    "index": 3,
+    "filename": "Avatar3.png",
+    "name": "Miles Morales",
+    "game": "Spider-Man: Miles Morales",
+    "category": "PlayStation"
+  },
+  {
+    "index": 4,
+    "filename": "Avatar4.png",
+    "name": "Cloud Strife",
+    "game": "Final Fantasy VII Rebirth",
+    "category": "PlayStation"
+  },
+  {
+    "index": 5,
+    "filename": "Avatar5.png",
+    "name": "Tifa Lockhart",
+    "game": "Final Fantasy VII Rebirth",
+    "category": "PlayStation"
+  },
+  {
+    "index": 6,
+    "filename": "Avatar6.png",
+    "name": "Aerith Gainsborough",
+    "game": "Final Fantasy VII Rebirth",
+    "category": "PlayStation"
+  },
+  {
+    "index": 7,
+    "filename": "Avatar7.png",
+    "name": "Zack Fair",
+    "game": "Crisis Core: FFVII",
+    "category": "PlayStation"
+  },
+  {
+    "index": 8,
+    "filename": "Avatar8.png",
+    "name": "Yuna",
+    "game": "Final Fantasy X",
+    "category": "PlayStation"
+  },
+  {
+    "index": 9,
+    "filename": "Avatar9.png",
+    "name": "Tidus",
+    "game": "Final Fantasy X",
+    "category": "PlayStation"
+  },
+  {
+    "index": 10,
+    "filename": "Avatar10.png",
+    "name": "Solid Snake",
+    "game": "Metal Gear Solid",
+    "category": "PlayStation"
+  },
+  {
+    "index": 11,
+    "filename": "Avatar11.png",
+    "name": "Big Boss",
+    "game": "Metal Gear Solid V",
+    "category": "PlayStation"
+  },
+  {
+    "index": 12,
+    "filename": "Avatar12.png",
+    "name": "Revolver Ocelot",
+    "game": "Metal Gear Solid",
+    "category": "PlayStation"
+  },
+  {
+    "index": 13,
+    "filename": "Avatar13.png",
+    "name": "Kazuma Kiryu",
+    "game": "Yakuza / Like a Dragon",
+    "category": "PlayStation"
+  },
+  {
+    "index": 14,
+    "filename": "Avatar14.png",
+    "name": "Goro Majima",
+    "game": "Yakuza / Like a Dragon",
+    "category": "PlayStation"
+  },
+  {
+    "index": 15,
+    "filename": "Avatar15.png",
+    "name": "Ichiban Kasuga",
+    "game": "Yakuza: Like a Dragon",
+    "category": "PlayStation"
+  },
+  {
+    "index": 16,
+    "filename": "Avatar16.png",
+    "name": "Joker",
+    "game": "Persona 5 Royal",
+    "category": "PlayStation"
+  },
+  {
+    "index": 17,
+    "filename": "Avatar17.png",
+    "name": "Geralt of Rivia",
+    "game": "The Witcher 3: Wild Hunt",
+    "category": "RPG"
+  },
+  {
+    "index": 18,
+    "filename": "Avatar18.png",
+    "name": "Ciri",
+    "game": "The Witcher 3: Wild Hunt",
+    "category": "RPG"
+  },
+  {
+    "index": 19,
+    "filename": "Avatar19.png",
+    "name": "Batman",
+    "game": "Batman: Arkham Knight",
+    "category": "Gaming"
+  },
+  {
+    "index": 20,
+    "filename": "Avatar20.png",
+    "name": "Commander Shepard",
+    "game": "Mass Effect Legendary",
+    "category": "RPG"
+  },
+  {
+    "index": 21,
+    "filename": "Avatar21.png",
+    "name": "Ryu Hayabusa",
+    "game": "Ninja Gaiden",
+    "category": "Gaming"
+  },
+  {
+    "index": 22,
+    "filename": "Avatar22.png",
+    "name": "Son Goku",
+    "game": "Dragon Ball Z",
+    "category": "Anime"
+  },
+  {
+    "index": 23,
+    "filename": "Avatar23.png",
+    "name": "Majin Vegeta",
+    "game": "Dragon Ball Z",
+    "category": "Anime"
+  },
+  {
+    "index": 24,
+    "filename": "Avatar24.png",
+    "name": "Future Trunks",
+    "game": "Dragon Ball Z",
+    "category": "Anime"
+  },
+  {
+    "index": 25,
+    "filename": "Avatar25.png",
+    "name": "Naruto Uzumaki",
+    "game": "Naruto Shippuden",
+    "category": "Anime"
+  },
+  {
+    "index": 26,
+    "filename": "Avatar26.png",
+    "name": "Sasuke Uchiha",
+    "game": "Naruto Shippuden",
+    "category": "Anime"
+  },
+  {
+    "index": 27,
+    "filename": "Avatar27.png",
+    "name": "Kakashi Hatake",
+    "game": "Naruto Shippuden",
+    "category": "Anime"
+  },
+  {
+    "index": 28,
+    "filename": "Avatar28.png",
+    "name": "Itachi Uchiha",
+    "game": "Naruto Shippuden",
+    "category": "Anime"
+  },
+  {
+    "index": 29,
+    "filename": "Avatar29.png",
+    "name": "Monkey D. Luffy",
+    "game": "One Piece",
+    "category": "Anime"
+  },
+  {
+    "index": 30,
+    "filename": "Avatar30.png",
+    "name": "Roronoa Zoro",
+    "game": "One Piece",
+    "category": "Anime"
+  },
+  {
+    "index": 31,
+    "filename": "Avatar31.png",
+    "name": "Ichigo Kurosaki",
+    "game": "Bleach",
+    "category": "Anime"
+  },
+  {
+    "index": 32,
+    "filename": "Avatar32.png",
+    "name": "Kenpachi Zaraki",
+    "game": "Bleach",
+    "category": "Anime"
+  },
+  {
+    "index": 33,
+    "filename": "Avatar33.png",
+    "name": "Link",
+    "game": "The Legend of Zelda",
+    "category": "Gaming"
+  },
+  {
+    "index": 34,
+    "filename": "Avatar34.png",
+    "name": "Princess Zelda",
+    "game": "The Legend of Zelda",
+    "category": "Gaming"
+  },
+  {
+    "index": 35,
+    "filename": "Avatar35.png",
+    "name": "Mario",
+    "game": "Super Mario",
+    "category": "Gaming"
+  },
+  {
+    "index": 36,
+    "filename": "Avatar36.png",
+    "name": "Aetheris Modern",
+    "game": "PlayStation 5 Theme",
+    "category": "PlayStation"
+  }
+]
