@@ -2499,7 +2499,11 @@
                         <CheckBoxEx x:Name="PS5LoginScreenDismissCheckBox" IsChecked="False" Visibility="Collapsed" Focusable="False"/>
 
                         <Grid x:Name="PS5LoginScreenRoot" Grid.RowSpan="3" Panel.ZIndex="1200"
-                              HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                              HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                              RenderTransformOrigin="0.5,0.5">
+                            <Grid.RenderTransform>
+                                <ScaleTransform ScaleX="1.0" ScaleY="1.0"/>
+                            </Grid.RenderTransform>
                             <Grid.Style>
                                 <Style TargetType="Grid">
                                     <Setter Property="Visibility" Value="Visible"/>
@@ -2507,17 +2511,247 @@
                                     <Setter Property="IsHitTestVisible" Value="True"/>
                                     <Style.Triggers>
                                         <DataTrigger Binding="{Binding ElementName=PS5LoginScreenDismissCheckBox, Path=IsChecked}" Value="True">
-                                            <Setter Property="Visibility" Value="Hidden"/>
-                                            <Setter Property="Opacity" Value="0"/>
+                                            <DataTrigger.EnterActions>
+                                                <BeginStoryboard>
+                                                    <Storyboard>
+                                                        <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                                                         To="0" Duration="0:0:0.45">
+                                                            <DoubleAnimation.EasingFunction>
+                                                                <CubicEase EasingMode="EaseOut"/>
+                                                            </DoubleAnimation.EasingFunction>
+                                                        </DoubleAnimation>
+                                                        <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleX)"
+                                                                         To="1.06" Duration="0:0:0.45">
+                                                            <DoubleAnimation.EasingFunction>
+                                                                <CubicEase EasingMode="EaseOut"/>
+                                                            </DoubleAnimation.EasingFunction>
+                                                        </DoubleAnimation>
+                                                        <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleY)"
+                                                                         To="1.06" Duration="0:0:0.45">
+                                                            <DoubleAnimation.EasingFunction>
+                                                                <CubicEase EasingMode="EaseOut"/>
+                                                            </DoubleAnimation.EasingFunction>
+                                                        </DoubleAnimation>
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </DataTrigger.EnterActions>
+                                            <DataTrigger.ExitActions>
+                                                <BeginStoryboard>
+                                                    <Storyboard>
+                                                        <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                                                         To="1" Duration="0:0:0.35">
+                                                            <DoubleAnimation.EasingFunction>
+                                                                <CubicEase EasingMode="EaseOut"/>
+                                                            </DoubleAnimation.EasingFunction>
+                                                        </DoubleAnimation>
+                                                        <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleX)"
+                                                                         To="1.0" Duration="0:0:0.35">
+                                                            <DoubleAnimation.EasingFunction>
+                                                                <CubicEase EasingMode="EaseOut"/>
+                                                            </DoubleAnimation.EasingFunction>
+                                                        </DoubleAnimation>
+                                                        <DoubleAnimation Storyboard.TargetProperty="(RenderTransform).(ScaleTransform.ScaleY)"
+                                                                         To="1.0" Duration="0:0:0.35">
+                                                            <DoubleAnimation.EasingFunction>
+                                                                <CubicEase EasingMode="EaseOut"/>
+                                                            </DoubleAnimation.EasingFunction>
+                                                        </DoubleAnimation>
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </DataTrigger.ExitActions>
                                             <Setter Property="IsHitTestVisible" Value="False"/>
+                                            <Setter Property="Visibility" Value="Hidden"/>
                                         </DataTrigger>
                                     </Style.Triggers>
                                 </Style>
                             </Grid.Style>
 
-                            <!-- 1. PS5 High-Res Cinematic Dark Obsidian / Golden Stardust Backdrop -->
+                            <!-- ========================================================================= -->
+                            <!-- LIVING PS5 AMBIENT SYSTEM: BASE BACKDROP + AURORA BLOOM + DRIFTING PARTICLES -->
+                            <!-- ========================================================================= -->
+
+                            <!-- 1. Deep Obsidian Base Backdrop -->
                             <Image Source="{ThemeFile 'Images/PS5_Login_Backdrop.jpg'}" Stretch="UniformToFill"
                                    HorizontalAlignment="Center" VerticalAlignment="Center" SnapsToDevicePixels="True"/>
+
+                            <!-- 2. Animated Radiant PS5 Aurora Nebula Layer (Slow Breathing Cycle) -->
+                            <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ClipToBounds="True" IsHitTestVisible="False">
+                                <Canvas.Triggers>
+                                    <EventTrigger RoutedEvent="Canvas.Loaded">
+                                        <BeginStoryboard>
+                                            <Storyboard RepeatBehavior="Forever">
+                                                <DoubleAnimation Storyboard.TargetName="Ps5AuroraOrb1"
+                                                                 Storyboard.TargetProperty="Opacity"
+                                                                 From="0.35" To="0.75" Duration="0:0:05" AutoReverse="True">
+                                                    <DoubleAnimation.EasingFunction>
+                                                        <SineEase EasingMode="EaseInOut"/>
+                                                    </DoubleAnimation.EasingFunction>
+                                                </DoubleAnimation>
+                                                <DoubleAnimation Storyboard.TargetName="Ps5AuroraOrb1Trans"
+                                                                 Storyboard.TargetProperty="X"
+                                                                 From="-30" To="40" Duration="0:0:09" AutoReverse="True">
+                                                    <DoubleAnimation.EasingFunction>
+                                                        <SineEase EasingMode="EaseInOut"/>
+                                                    </DoubleAnimation.EasingFunction>
+                                                </DoubleAnimation>
+                                                <DoubleAnimation Storyboard.TargetName="Ps5AuroraOrb1Trans"
+                                                                 Storyboard.TargetProperty="Y"
+                                                                 From="10" To="-35" Duration="0:0:07" AutoReverse="True">
+                                                    <DoubleAnimation.EasingFunction>
+                                                        <SineEase EasingMode="EaseInOut"/>
+                                                    </DoubleAnimation.EasingFunction>
+                                                </DoubleAnimation>
+
+                                                <DoubleAnimation Storyboard.TargetName="Ps5AuroraOrb2"
+                                                                 Storyboard.TargetProperty="Opacity"
+                                                                 From="0.25" To="0.60" Duration="0:0:06" AutoReverse="True">
+                                                    <DoubleAnimation.EasingFunction>
+                                                        <SineEase EasingMode="EaseInOut"/>
+                                                    </DoubleAnimation.EasingFunction>
+                                                </DoubleAnimation>
+                                                <DoubleAnimation Storyboard.TargetName="Ps5AuroraOrb2Trans"
+                                                                 Storyboard.TargetProperty="X"
+                                                                 From="35" To="-45" Duration="0:0:11" AutoReverse="True">
+                                                    <DoubleAnimation.EasingFunction>
+                                                        <SineEase EasingMode="EaseInOut"/>
+                                                    </DoubleAnimation.EasingFunction>
+                                                </DoubleAnimation>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger>
+                                </Canvas.Triggers>
+
+                                <!-- Central Golden Stardust Bloom -->
+                                <Border x:Name="Ps5AuroraOrb1" Width="1000" Height="700" CornerRadius="500"
+                                        Canvas.Left="460" Canvas.Top="200" Opacity="0.45" RenderTransformOrigin="0.5,0.5">
+                                    <Border.RenderTransform>
+                                        <TranslateTransform x:Name="Ps5AuroraOrb1Trans"/>
+                                    </Border.RenderTransform>
+                                    <Border.Background>
+                                        <RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+                                            <GradientStop Color="#50D69E2E" Offset="0"/>
+                                            <GradientStop Color="#259C6B15" Offset="0.55"/>
+                                            <GradientStop Color="#00000000" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Border.Background>
+                                </Border>
+
+                                <!-- Deep PlayStation Royal Blue Contrast Ambient Orb -->
+                                <Border x:Name="Ps5AuroraOrb2" Width="1100" Height="650" CornerRadius="550"
+                                        Canvas.Left="400" Canvas.Top="260" Opacity="0.35" RenderTransformOrigin="0.5,0.5">
+                                    <Border.RenderTransform>
+                                        <TranslateTransform x:Name="Ps5AuroraOrb2Trans"/>
+                                    </Border.RenderTransform>
+                                    <Border.Background>
+                                        <RadialGradientBrush Center="0.5,0.5" GradientOrigin="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+                                            <GradientStop Color="#300066CC" Offset="0"/>
+                                            <GradientStop Color="#10003388" Offset="0.6"/>
+                                            <GradientStop Color="#00000000" Offset="1"/>
+                                        </RadialGradientBrush>
+                                    </Border.Background>
+                                </Border>
+                            </Canvas>
+
+                            <!-- 3. Living Floating Stardust & Bokeh Particles (Signature PS5 Flow) -->
+                            <Canvas HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ClipToBounds="True" IsHitTestVisible="False">
+                                <Canvas.Triggers>
+                                    <EventTrigger RoutedEvent="Canvas.Loaded">
+                                        <BeginStoryboard>
+                                            <Storyboard RepeatBehavior="Forever">
+                                                <!-- Particle 1: Golden Bokeh Mote -->
+                                                <DoubleAnimation Storyboard.TargetName="DustMote1Trans" Storyboard.TargetProperty="Y"
+                                                                 From="0" To="-90" Duration="0:0:07" AutoReverse="True"/>
+                                                <DoubleAnimation Storyboard.TargetName="DustMote1Trans" Storyboard.TargetProperty="X"
+                                                                 From="0" To="45" Duration="0:0:05" AutoReverse="True"/>
+                                                <DoubleAnimation Storyboard.TargetName="DustMote1" Storyboard.TargetProperty="Opacity"
+                                                                 From="0.2" To="0.85" Duration="0:0:03.5" AutoReverse="True"/>
+
+                                                <!-- Particle 2: Bright Upper Drift -->
+                                                <DoubleAnimation Storyboard.TargetName="DustMote2Trans" Storyboard.TargetProperty="Y"
+                                                                 From="0" To="-120" Duration="0:0:09" AutoReverse="True"/>
+                                                <DoubleAnimation Storyboard.TargetName="DustMote2Trans" Storyboard.TargetProperty="X"
+                                                                 From="0" To="-55" Duration="0:0:06.5" AutoReverse="True"/>
+                                                <DoubleAnimation Storyboard.TargetName="DustMote2" Storyboard.TargetProperty="Opacity"
+                                                                 From="0.15" To="0.9" Duration="0:0:04" AutoReverse="True"/>
+
+                                                <!-- Particle 3: Subtle Background Specular -->
+                                                <DoubleAnimation Storyboard.TargetName="DustMote3Trans" Storyboard.TargetProperty="Y"
+                                                                 From="0" To="-70" Duration="0:0:08" AutoReverse="True"/>
+                                                <DoubleAnimation Storyboard.TargetName="DustMote3Trans" Storyboard.TargetProperty="X"
+                                                                 From="0" To="35" Duration="0:0:05.5" AutoReverse="True"/>
+                                                <DoubleAnimation Storyboard.TargetName="DustMote3" Storyboard.TargetProperty="Opacity"
+                                                                 From="0.1" To="0.7" Duration="0:0:04.5" AutoReverse="True"/>
+
+                                                <!-- Particle 4: Left Orbit Drift -->
+                                                <DoubleAnimation Storyboard.TargetName="DustMote4Trans" Storyboard.TargetProperty="Y"
+                                                                 From="0" To="-85" Duration="0:0:06" AutoReverse="True"/>
+                                                <DoubleAnimation Storyboard.TargetName="DustMote4Trans" Storyboard.TargetProperty="X"
+                                                                 From="0" To="-40" Duration="0:0:04.8" AutoReverse="True"/>
+                                                <DoubleAnimation Storyboard.TargetName="DustMote4" Storyboard.TargetProperty="Opacity"
+                                                                 From="0.25" To="0.95" Duration="0:0:03" AutoReverse="True"/>
+
+                                                <!-- Particle 5: Right Shimmer Spec -->
+                                                <DoubleAnimation Storyboard.TargetName="DustMote5Trans" Storyboard.TargetProperty="Y"
+                                                                 From="0" To="-100" Duration="0:0:08.5" AutoReverse="True"/>
+                                                <DoubleAnimation Storyboard.TargetName="DustMote5Trans" Storyboard.TargetProperty="X"
+                                                                 From="0" To="50" Duration="0:0:06" AutoReverse="True"/>
+                                                <DoubleAnimation Storyboard.TargetName="DustMote5" Storyboard.TargetProperty="Opacity"
+                                                                 From="0.2" To="0.8" Duration="0:0:04.2" AutoReverse="True"/>
+
+                                                <!-- Particle 6: Large Soft Center Bokeh -->
+                                                <DoubleAnimation Storyboard.TargetName="DustMote6Trans" Storyboard.TargetProperty="Y"
+                                                                 From="0" To="-60" Duration="0:0:10" AutoReverse="True"/>
+                                                <DoubleAnimation Storyboard.TargetName="DustMote6Trans" Storyboard.TargetProperty="X"
+                                                                 From="0" To="30" Duration="0:0:08" AutoReverse="True"/>
+                                                <DoubleAnimation Storyboard.TargetName="DustMote6" Storyboard.TargetProperty="Opacity"
+                                                                 From="0.1" To="0.45" Duration="0:0:05" AutoReverse="True"/>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger>
+                                </Canvas.Triggers>
+
+                                <!-- Dust Mote 1 -->
+                                <Border x:Name="DustMote1" Width="10" Height="10" CornerRadius="5" Background="#FFE699"
+                                        Canvas.Left="820" Canvas.Top="480" Opacity="0.4">
+                                    <Border.RenderTransform><TranslateTransform x:Name="DustMote1Trans"/></Border.RenderTransform>
+                                    <Border.Effect><DropShadowEffect Color="#FFC642" BlurRadius="12" ShadowDepth="0" Opacity="0.9"/></Border.Effect>
+                                </Border>
+
+                                <!-- Dust Mote 2 -->
+                                <Border x:Name="DustMote2" Width="14" Height="14" CornerRadius="7" Background="#FFF5D6"
+                                        Canvas.Left="1080" Canvas.Top="420" Opacity="0.3">
+                                    <Border.RenderTransform><TranslateTransform x:Name="DustMote2Trans"/></Border.RenderTransform>
+                                    <Border.Effect><DropShadowEffect Color="#FFD466" BlurRadius="16" ShadowDepth="0" Opacity="0.85"/></Border.Effect>
+                                </Border>
+
+                                <!-- Dust Mote 3 -->
+                                <Border x:Name="DustMote3" Width="7" Height="7" CornerRadius="3.5" Background="#FFFFFF"
+                                        Canvas.Left="950" Canvas.Top="350" Opacity="0.2">
+                                    <Border.RenderTransform><TranslateTransform x:Name="DustMote3Trans"/></Border.RenderTransform>
+                                    <Border.Effect><DropShadowEffect Color="#FFFFFF" BlurRadius="10" ShadowDepth="0" Opacity="0.8"/></Border.Effect>
+                                </Border>
+
+                                <!-- Dust Mote 4 -->
+                                <Border x:Name="DustMote4" Width="12" Height="12" CornerRadius="6" Background="#FFDA73"
+                                        Canvas.Left="700" Canvas.Top="450" Opacity="0.35">
+                                    <Border.RenderTransform><TranslateTransform x:Name="DustMote4Trans"/></Border.RenderTransform>
+                                    <Border.Effect><DropShadowEffect Color="#FFBB22" BlurRadius="14" ShadowDepth="0" Opacity="0.9"/></Border.Effect>
+                                </Border>
+
+                                <!-- Dust Mote 5 -->
+                                <Border x:Name="DustMote5" Width="9" Height="9" CornerRadius="4.5" Background="#FFF0B3"
+                                        Canvas.Left="1220" Canvas.Top="510" Opacity="0.25">
+                                    <Border.RenderTransform><TranslateTransform x:Name="DustMote5Trans"/></Border.RenderTransform>
+                                    <Border.Effect><DropShadowEffect Color="#FFAA00" BlurRadius="12" ShadowDepth="0" Opacity="0.75"/></Border.Effect>
+                                </Border>
+
+                                <!-- Dust Mote 6 (Large Atmospheric Bokeh Orb) -->
+                                <Border x:Name="DustMote6" Width="44" Height="44" CornerRadius="22" Background="#35FFEAA7"
+                                        Canvas.Left="880" Canvas.Top="530" Opacity="0.2">
+                                    <Border.RenderTransform><TranslateTransform x:Name="DustMote6Trans"/></Border.RenderTransform>
+                                    <Border.Effect><DropShadowEffect Color="#FFEAA7" BlurRadius="28" ShadowDepth="0" Opacity="0.6"/></Border.Effect>
+                                </Border>
+                            </Canvas>
 
 
 
@@ -2793,31 +3027,44 @@
 
                                 </StackPanel>
 
-                                <!-- C. PS5 Footer Controller Action Legend -->
+                                <!-- C. PS5 Footer Controller Action Legend (Strict 1:1 PS5 DualSense Prompt Specs) -->
                                 <DockPanel Grid.Row="2" Margin="60,0,60,40">
                                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
-                                        <Border Background="#20FFFFFF" CornerRadius="4" Padding="7,2" Margin="0,0,8,0">
-                                            <TextBlock Text="ENTER / X" FontFamily="Segoe UI" FontWeight="Bold" FontSize="11" Foreground="#E0E0E0"/>
+                                        <!-- PlayStation Cross (✕) Button -->
+                                        <Border Background="#25FFFFFF" BorderBrush="#50FFFFFF" BorderThickness="1"
+                                                CornerRadius="11" Width="22" Height="22" Margin="0,0,10,0" VerticalAlignment="Center">
+                                            <TextBlock Text="✕" FontFamily="Segoe UI" FontWeight="Bold" FontSize="11"
+                                                       Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-1,0,0"/>
                                         </Border>
-                                        <TextBlock Text="Log In to PlayStation" FontFamily="Segoe UI" FontSize="13" Foreground="#9AB0C6" VerticalAlignment="Center" Margin="0,0,28,0"/>
+                                        <TextBlock Text="Select" FontFamily="Segoe UI" FontSize="14" Foreground="#CAD7E5" VerticalAlignment="Center" Margin="0,0,32,0"/>
 
-                                        <Border Background="#20FFFFFF" CornerRadius="4" Padding="7,2" Margin="0,0,8,0">
-                                            <TextBlock Text="OPTIONS" FontFamily="Segoe UI" FontWeight="Bold" FontSize="11" Foreground="#E0E0E0"/>
+                                        <!-- DualSense Options Symbol [ ☰ ] -->
+                                        <Border Background="#25FFFFFF" BorderBrush="#50FFFFFF" BorderThickness="1"
+                                                CornerRadius="4" Width="22" Height="15" Margin="0,0,10,0" VerticalAlignment="Center">
+                                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <Rectangle Width="10" Height="1.2" Fill="White" Margin="0,0,0,1"/>
+                                                <Rectangle Width="10" Height="1.2" Fill="White" Margin="0,0,0,1"/>
+                                                <Rectangle Width="10" Height="1.2" Fill="White"/>
+                                            </StackPanel>
                                         </Border>
-                                        <TextBlock Text="Switch Avatar / Edit Profile" FontFamily="Segoe UI" FontSize="13" Foreground="#9AB0C6" VerticalAlignment="Center"/>
+                                        <TextBlock Text="Options" FontFamily="Segoe UI" FontSize="14" Foreground="#CAD7E5" VerticalAlignment="Center"/>
                                     </StackPanel>
 
-                                    <!-- Quick Enter Dashboard Button -->
+                                    <!-- Quick Enter Dashboard Button (Right-aligned PS5 Enter Action) -->
                                     <CheckBoxEx DockPanel.Dock="Right" HorizontalAlignment="Right" VerticalAlignment="Center"
                                                 IsChecked="{Binding ElementName=PS5LoginScreenDismissCheckBox, Path=IsChecked, Mode=TwoWay}"
                                                 Focusable="True" Cursor="Hand">
                                         <CheckBoxEx.Template>
                                             <ControlTemplate TargetType="CheckBoxEx">
-                                                <Border x:Name="EnterBtn" Background="#18FFFFFF" BorderBrush="#30FFFFFF" BorderThickness="1.5"
-                                                        CornerRadius="18" Padding="20,7" SnapsToDevicePixels="True">
+                                                <Border x:Name="EnterBtn" Background="#18FFFFFF" BorderBrush="#35FFFFFF" BorderThickness="1.5"
+                                                        CornerRadius="20" Padding="22,8" SnapsToDevicePixels="True">
                                                     <StackPanel Orientation="Horizontal">
-                                                        <TextBlock Text="Enter Launcher" FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="13" Foreground="White" Margin="0,0,8,0"/>
-                                                        <TextBlock Text="&#xE76C;" FontFamily="Segoe Fluent Icons, Segoe MDL2 Assets" FontSize="11" Foreground="White" VerticalAlignment="Center"/>
+                                                        <!-- PlayStation Cross (✕) Button in Pill -->
+                                                        <Border Background="#30FFFFFF" CornerRadius="8" Width="16" Height="16" Margin="0,0,8,0" VerticalAlignment="Center">
+                                                            <TextBlock Text="✕" FontFamily="Segoe UI" FontWeight="Bold" FontSize="9"
+                                                                       Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-1,0,0"/>
+                                                        </Border>
+                                                        <TextBlock Text="Log In" FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="13" Foreground="White" Margin="0,0,4,0"/>
                                                     </StackPanel>
                                                 </Border>
                                                 <ControlTemplate.Triggers>
