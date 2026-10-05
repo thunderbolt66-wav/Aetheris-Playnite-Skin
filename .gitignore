@@ -30,3 +30,5 @@ _ReSharper*/
 #Nuget packages folder
 packages/
 dist/
+*.pthm
+avatars_contact_sheet.png

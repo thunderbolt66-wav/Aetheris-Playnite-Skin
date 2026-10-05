@@ -2507,17 +2507,6 @@
                                     <Setter Property="IsHitTestVisible" Value="True"/>
                                     <Style.Triggers>
                                         <DataTrigger Binding="{Binding ElementName=PS5LoginScreenDismissCheckBox, Path=IsChecked}" Value="True">
-                                            <DataTrigger.EnterActions>
-                                                <BeginStoryboard>
-                                                    <Storyboard>
-                                                        <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.35">
-                                                            <DoubleAnimation.EasingFunction>
-                                                                <CubicEase EasingMode="EaseOut"/>
-                                                            </DoubleAnimation.EasingFunction>
-                                                        </DoubleAnimation>
-                                                    </Storyboard>
-                                                </BeginStoryboard>
-                                            </DataTrigger.EnterActions>
                                             <Setter Property="Visibility" Value="Hidden"/>
                                             <Setter Property="Opacity" Value="0"/>
                                             <Setter Property="IsHitTestVisible" Value="False"/>
@@ -2530,80 +2519,7 @@
                             <Image Source="{ThemeFile 'Images/PS5_Login_Backdrop.jpg'}" Stretch="UniformToFill"
                                    HorizontalAlignment="Center" VerticalAlignment="Center" SnapsToDevicePixels="True"/>
 
-                            <!-- 2. Dynamic Ambient PS5 Sunray & Stardust Floating Canvas -->
-                            <Canvas x:Name="PS5LoginAmbientCanvas" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" IsHitTestVisible="False">
-                                <Canvas.Resources>
-                                    <!-- Gentle Floating Bokeh 1 -->
-                                    <Storyboard x:Key="FloatBokeh1" RepeatBehavior="Forever" AutoReverse="True">
-                                        <DoubleAnimation Storyboard.TargetName="BokehOrb1" Storyboard.TargetProperty="(Canvas.Top)"
-                                                         From="380" To="330" Duration="0:0:5">
-                                            <DoubleAnimation.EasingFunction>
-                                                <SineEase EasingMode="EaseInOut"/>
-                                            </DoubleAnimation.EasingFunction>
-                                        </DoubleAnimation>
-                                        <DoubleAnimation Storyboard.TargetName="BokehOrb1" Storyboard.TargetProperty="Opacity"
-                                                         From="0.35" To="0.75" Duration="0:0:4"/>
-                                    </Storyboard>
 
-                                    <!-- Gentle Floating Bokeh 2 -->
-                                    <Storyboard x:Key="FloatBokeh2" RepeatBehavior="Forever" AutoReverse="True">
-                                        <DoubleAnimation Storyboard.TargetName="BokehOrb2" Storyboard.TargetProperty="(Canvas.Top)"
-                                                         From="520" To="470" Duration="0:0:6.5">
-                                            <DoubleAnimation.EasingFunction>
-                                                <SineEase EasingMode="EaseInOut"/>
-                                            </DoubleAnimation.EasingFunction>
-                                        </DoubleAnimation>
-                                        <DoubleAnimation Storyboard.TargetName="BokehOrb2" Storyboard.TargetProperty="Opacity"
-                                                         From="0.25" To="0.65" Duration="0:0:4.5"/>
-                                    </Storyboard>
-
-                                    <!-- Light Shaft Shimmer -->
-                                    <Storyboard x:Key="SunbeamShimmer" RepeatBehavior="Forever" AutoReverse="True">
-                                        <DoubleAnimation Storyboard.TargetName="LoginSunbeam" Storyboard.TargetProperty="Opacity"
-                                                         From="0.30" To="0.60" Duration="0:0:4.5">
-                                            <DoubleAnimation.EasingFunction>
-                                                <SineEase EasingMode="EaseInOut"/>
-                                            </DoubleAnimation.EasingFunction>
-                                        </DoubleAnimation>
-                                    </Storyboard>
-                                </Canvas.Resources>
-
-                                <!-- Radiant Top-Left Volumetric Light Shaft -->
-                                <Border x:Name="LoginSunbeam" Width="1100" Height="900" Canvas.Left="-150" Canvas.Top="-150" Opacity="0.45">
-                                    <Border.Background>
-                                        <RadialGradientBrush Center="0.1,0.1" GradientOrigin="0.1,0.1" RadiusX="0.9" RadiusY="0.9">
-                                            <GradientStop Color="#55FFE2A8" Offset="0"/>
-                                            <GradientStop Color="#25DCA65E" Offset="0.35"/>
-                                            <GradientStop Color="#08A37532" Offset="0.7"/>
-                                            <GradientStop Color="#00000000" Offset="1"/>
-                                        </RadialGradientBrush>
-                                    </Border.Background>
-                                </Border>
-
-                                <!-- Floating Bokeh Orb 1 -->
-                                <Border x:Name="BokehOrb1" Width="140" Height="140" CornerRadius="70"
-                                        Canvas.Left="420" Canvas.Top="360" Opacity="0.5" Background="#35FFE1A8">
-                                    <Border.Effect>
-                                        <BlurEffect Radius="45"/>
-                                    </Border.Effect>
-                                </Border>
-
-                                <!-- Floating Bokeh Orb 2 -->
-                                <Border x:Name="BokehOrb2" Width="190" Height="190" CornerRadius="95"
-                                        Canvas.Left="1280" Canvas.Top="500" Opacity="0.4" Background="#30FFC875">
-                                    <Border.Effect>
-                                        <BlurEffect Radius="55"/>
-                                    </Border.Effect>
-                                </Border>
-
-                                <Canvas.Triggers>
-                                    <EventTrigger RoutedEvent="Canvas.Loaded">
-                                        <BeginStoryboard Storyboard="{StaticResource FloatBokeh1}"/>
-                                        <BeginStoryboard Storyboard="{StaticResource FloatBokeh2}"/>
-                                        <BeginStoryboard Storyboard="{StaticResource SunbeamShimmer}"/>
-                                    </EventTrigger>
-                                </Canvas.Triggers>
-                            </Canvas>
 
                             <!-- 3. Main PS5 Login Layout Content -->
                             <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
@@ -2663,13 +2579,13 @@
                                     <!-- 2. Primary Logged-in User Card (Exact PS5 Centerpiece with Controller Indicator) -->
                                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50,0,0,0">
                                         
-                                        <!-- Active Controller #1 Badge -->
-                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,12">
-                                            <Border Background="Transparent" VerticalAlignment="Center" Margin="0,0,5,0">
-                                                <TextBlock Text="&#xE7FC;" FontFamily="Segoe Fluent Icons, Segoe MDL2 Assets" FontSize="18"
-                                                           Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                            </Border>
-                                            <TextBlock Text="1" FontFamily="Segoe UI" FontWeight="Bold" FontSize="12" Foreground="White" VerticalAlignment="Top"/>
+                                        <!-- Active Controller #1 Badge (Exact PS5 Hardware Layout) -->
+                                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,0,0,14">
+                                            <TextBlock Text="1" FontFamily="Segoe UI" FontWeight="SemiBold" FontSize="12"
+                                                       Foreground="#D2DFEC" HorizontalAlignment="Center" Margin="0,0,0,3"/>
+                                            <!-- Crisp PlayStation DualSense Silhouette Vector -->
+                                            <Path Data="M 4,6 C 2.5,7.5 1.5,11.5 2,15 C 2.4,18 4.2,19.2 5.5,18.2 C 6.8,17.2 7.8,13.8 8.4,12.5 C 9.5,12 10.5,12 11.6,12.5 C 12.2,13.8 13.2,17.2 14.5,18.2 C 15.8,19.2 17.6,18 18,15 C 18.5,11.5 17.5,7.5 16,6 C 14.2,4.5 12.2,4 10,4 C 7.8,4 5.8,4.5 4,6 Z"
+                                                  Fill="White" Width="24" Height="17" Stretch="Uniform" HorizontalAlignment="Center"/>
                                         </StackPanel>
 
                                         <!-- Main Primary Profile Login Avatar (Click / Press Enter to log into PlayStation dashboard) -->
@@ -2679,18 +2595,17 @@
                                                 <ControlTemplate TargetType="CheckBoxEx">
                                                     <Grid Background="Transparent">
                                                         <!-- Outer Glowing Focus Ring -->
-                                                        <Border x:Name="OuterRing" Width="188" Height="188" CornerRadius="94"
-                                                                BorderThickness="3" BorderBrush="#00A4FF" Opacity="0.9"
-                                                                HorizontalAlignment="Center" VerticalAlignment="Center" SnapsToDevicePixels="True"/>
-
-                                                        <!-- Secondary Specular Ring -->
-                                                        <Border Width="176" Height="176" CornerRadius="88"
-                                                                BorderThickness="1" BorderBrush="#60FFFFFF"
-                                                                HorizontalAlignment="Center" VerticalAlignment="Center" SnapsToDevicePixels="True"/>
+                                                        <Border x:Name="OuterRing" Width="184" Height="184" CornerRadius="92"
+                                                                BorderThickness="2" BorderBrush="#90E2F0FF" Opacity="0.9"
+                                                                HorizontalAlignment="Center" VerticalAlignment="Center" SnapsToDevicePixels="True">
+                                                            <Border.Effect>
+                                                                <DropShadowEffect Color="#B8D8F8" BlurRadius="14" ShadowDepth="0" Opacity="0.5"/>
+                                                            </Border.Effect>
+                                                        </Border>
 
                                                         <!-- Dynamic Avatar Image Surface -->
-                                                        <Border x:Name="UserAvatarBorder" Width="162" Height="162" CornerRadius="81"
-                                                                BorderThickness="2" BorderBrush="#0070D1" HorizontalAlignment="Center"
+                                                        <Border x:Name="UserAvatarBorder" Width="158" Height="158" CornerRadius="79"
+                                                                BorderThickness="2" BorderBrush="#40FFFFFF" HorizontalAlignment="Center"
                                                                 VerticalAlignment="Center" SnapsToDevicePixels="True">
                                                             <Border.Style>
                                                                 <Style TargetType="Border">
@@ -2828,35 +2743,46 @@
                                             </CheckBoxEx.Template>
                                         </CheckBoxEx>
 
-                                        <!-- Gamertag Name and PS Plus Emblem -->
+                                        <!-- Gamertag Name and PS Plus Emblem (Exact PS5 Official) -->
                                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,16,0,0">
                                             <TextBlock Text="{Binding ElementName=ProfileNameTextBox, Path=Text, TargetNullValue='Scotty Kenzo', FallbackValue='Scotty Kenzo'}"
-                                                       FontFamily="Segoe UI" FontWeight="Bold" FontSize="19" Foreground="White"
-                                                       VerticalAlignment="Center" Margin="0,0,6,0"/>
-                                            <!-- PS Plus Golden Cross Badge -->
-                                            <Border Background="#E6B800" Width="14" Height="14" CornerRadius="3" VerticalAlignment="Center">
+                                                       FontFamily="Segoe UI" FontWeight="Bold" FontSize="20" Foreground="White"
+                                                       VerticalAlignment="Center" Margin="0,0,7,0">
+                                                <TextBlock.Effect>
+                                                    <DropShadowEffect Color="Black" BlurRadius="10" ShadowDepth="1" Opacity="0.75"/>
+                                                </TextBlock.Effect>
+                                            </TextBlock>
+                                            <!-- PS Plus Golden Cross Badge (Exact PS5 Geometry) -->
+                                            <Border Background="#F5C400" Width="14" Height="14" CornerRadius="3" VerticalAlignment="Center">
                                                 <TextBlock Text="+" FontFamily="Segoe UI" FontWeight="ExtraBold" FontSize="12"
-                                                           Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-2,0,0"/>
+                                                           Foreground="#1A1300" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-2.5,0,0"/>
                                             </Border>
                                         </StackPanel>
 
-                                        <!-- Options Prompt (Opens Avatar / Profile Settings) -->
-                                        <CheckBoxEx Cursor="Hand" Focusable="True" Margin="0,8,0,0"
+                                        <!-- Options Prompt (Opens Avatar / Profile Settings - Exact DualSense Options Key) -->
+                                        <CheckBoxEx Cursor="Hand" Focusable="True" Margin="0,9,0,0"
                                                     IsChecked="{Binding ElementName=ProfilePictureCheckBox, Path=IsChecked, Mode=TwoWay}">
                                             <CheckBoxEx.Template>
                                                 <ControlTemplate TargetType="CheckBoxEx">
-                                                    <StackPanel x:Name="OptionsPrompt" Orientation="Horizontal" HorizontalAlignment="Center">
-                                                        <Border Background="#25FFFFFF" CornerRadius="3" Padding="4,1" Margin="0,0,6,0" VerticalAlignment="Center">
-                                                            <TextBlock Text="&#xE700;" FontFamily="Segoe Fluent Icons, Segoe MDL2 Assets" FontSize="10" Foreground="#C5D3E0"/>
-                                                        </Border>
-                                                        <TextBlock Text="Options" FontFamily="Segoe UI" FontSize="13" Foreground="#9EAFBF" VerticalAlignment="Center"/>
-                                                    </StackPanel>
+                                                    <Border x:Name="OptionsContainer" Background="Transparent" CornerRadius="10" Padding="8,3">
+                                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                            <!-- DualSense Options Symbol [ ☰ ] -->
+                                                            <Border Background="#25FFFFFF" BorderBrush="#50FFFFFF" BorderThickness="1" CornerRadius="3.5" Width="18" Height="13" Margin="0,0,6,0" VerticalAlignment="Center">
+                                                                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                                    <Rectangle Width="9" Height="1.2" Fill="White" Margin="0,0,0,1"/>
+                                                                    <Rectangle Width="9" Height="1.2" Fill="White" Margin="0,0,0,1"/>
+                                                                    <Rectangle Width="9" Height="1.2" Fill="White"/>
+                                                                </StackPanel>
+                                                            </Border>
+                                                            <TextBlock Text="Options" FontFamily="Segoe UI" FontSize="13" Foreground="#9EAFBF" VerticalAlignment="Center"/>
+                                                        </StackPanel>
+                                                    </Border>
                                                     <ControlTemplate.Triggers>
                                                         <Trigger Property="IsFocused" Value="True">
-                                                            <Setter TargetName="OptionsPrompt" Property="Opacity" Value="1"/>
+                                                            <Setter TargetName="OptionsContainer" Property="Background" Value="#3000A4FF"/>
                                                         </Trigger>
                                                         <Trigger Property="IsMouseOver" Value="True">
-                                                            <Setter TargetName="OptionsPrompt" Property="Opacity" Value="1"/>
+                                                            <Setter TargetName="OptionsContainer" Property="Background" Value="#25FFFFFF"/>
                                                         </Trigger>
                                                     </ControlTemplate.Triggers>
                                                 </ControlTemplate>
@@ -2925,32 +2851,6 @@
                                             <Setter Property="Visibility" Value="Visible"/>
                                             <Setter Property="Opacity" Value="1"/>
                                             <Setter Property="IsHitTestVisible" Value="True"/>
-                                            <DataTrigger.EnterActions>
-                                                <BeginStoryboard>
-                                                    <Storyboard>
-                                                        <DoubleAnimation Storyboard.TargetProperty="Opacity"
-                                                                         From="0" To="1" Duration="0:0:0.25">
-                                                            <DoubleAnimation.EasingFunction>
-                                                                <CubicEase EasingMode="EaseOut"/>
-                                                            </DoubleAnimation.EasingFunction>
-                                                        </DoubleAnimation>
-                                                        <DoubleAnimation Storyboard.TargetName="ModalCardScale"
-                                                                         Storyboard.TargetProperty="ScaleX"
-                                                                         From="0.94" To="1.0" Duration="0:0:0.25">
-                                                            <DoubleAnimation.EasingFunction>
-                                                                <CubicEase EasingMode="EaseOut"/>
-                                                            </DoubleAnimation.EasingFunction>
-                                                        </DoubleAnimation>
-                                                        <DoubleAnimation Storyboard.TargetName="ModalCardScale"
-                                                                         Storyboard.TargetProperty="ScaleY"
-                                                                         From="0.94" To="1.0" Duration="0:0:0.25">
-                                                            <DoubleAnimation.EasingFunction>
-                                                                <CubicEase EasingMode="EaseOut"/>
-                                                            </DoubleAnimation.EasingFunction>
-                                                        </DoubleAnimation>
-                                                    </Storyboard>
-                                                </BeginStoryboard>
-                                            </DataTrigger.EnterActions>
                                         </DataTrigger>
                                     </Style.Triggers>
                                 </Style>
